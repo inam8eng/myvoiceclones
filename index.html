@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoiceClone — Offline Voice Cloning for Windows, Pay Once</title>
+<meta name="description" content="Clone your own voice on your PC. Type a script, get a checked voiceover — every word verified, click to fix. No upload, no subscription. Free version.">
+<link rel="canonical" href="https://myvoiceclones.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VoiceClone — Offline Voice Cloning for Windows, Pay Once">
+<meta property="og:description" content="Clone your own voice on your PC. Type a script, get a checked voiceover — every word verified, click to fix. No upload, no subscription. Free version.">
+<meta property="og:url" content="https://myvoiceclones.com/">
+<meta property="og:image" content="https://myvoiceclones.com/shots/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"VoiceClone",
+"operatingSystem":"Windows 10, Windows 11","applicationCategory":"MultimediaApplication",
+"description":"Clone your own voice on your PC. Type a script, get a checked voiceover — every word verified, click to fix. No upload, no subscription. Free version.",
+"offers":{"@type":"Offer","url":"https://designesh.gumroad.com/l/voiceclone","priceCurrency":"USD","price":"49"}}
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap">
+<style>
+:root{
+  --bg:#F2F5FA; --bg2:#F8FAFD; --surf:#FFFFFF;
+  --ink:#0F1B2D; --soft:#586479; --faint:#8A94A6;
+  --line:#E1E7F0; --line2:#CFD8E6;
+  --acc:#0B84E3; --acc-h:#2A9BF5; --acc-ink:#0866B4; --acc-tint:#E3F3FD; --acc-line:#AFD9F6;
+  --brand:#1D5BD6; --brand-ink:#164AB0; --brand-tint:#E8F0FE;
+  --ok:#12855A; --ok-tint:#E2F4EC; --bad:#C63B3B; --bad-tint:#FBE8E8;
+  --shadow:0 1px 2px rgba(15,27,45,.05),0 14px 34px -20px rgba(15,40,90,.28);
+  --shadow-lg:0 2px 4px rgba(15,27,45,.05),0 30px 60px -30px rgba(15,40,90,.45);
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surf);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--acc-ink);text-decoration:none}
+a:hover{color:var(--acc)}
+h1,h2,h3{margin:0;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+img{max-width:100%;height:auto;display:block}
+button{font-family:var(--sans)}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:8px}
+@keyframes fadein{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+</style>
+<style>.hv0:hover{color:var(--acc-ink)}.hv1:hover{background:var(--acc-h);color:#fff}.hv2:hover{border-color:var(--acc);color:var(--acc-ink)}.hv3:hover{background:var(--acc-h)}.hv4:hover{color:#fff}</style>
+</head>
+<body>
+
+<div style="min-height:100vh;background:var(--surf)">
+
+<header style="position:sticky;top:0;z-index:40;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)">
+  <div style="max-width:1120px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:14px">
+    <div style="width:32px;height:32px;border-radius:10px;background:var(--acc);display:flex;align-items:flex-end;justify-content:center;gap:2px;padding:8px 7px">
+      <i style="display:block;flex:1;height:38%;background:#fff;border-radius:99px"></i>
+      <i style="display:block;flex:1;height:80%;background:#fff;border-radius:99px"></i>
+      <i style="display:block;flex:1;height:100%;background:#fff;border-radius:99px"></i>
+      <i style="display:block;flex:1;height:58%;background:#fff;border-radius:99px"></i>
+    </div>
+    <span style="font-weight:800;font-size:17px;letter-spacing:-.03em">VoiceClone</span>
+    <span style="flex:1"></span>
+    <a href="#hear" style="font-size:13.5px;font-weight:600;color:var(--soft)" class="hv0">Listen</a>
+    <a href="#faq" style="font-size:13.5px;font-weight:600;color:var(--soft)" class="hv0">FAQ</a>
+    <a href="#pricing" style="display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:11px;background:var(--acc);color:#fff;font-weight:700;font-size:13.5px;box-shadow:0 8px 20px -12px var(--acc)" class="hv1">
+      Get VoiceClone
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
+    </a>
+  </div>
+</header>
+
+<section style="background:linear-gradient(180deg,var(--acc-tint) 0%,rgba(227,243,253,0) 78%)">
+  <div style="max-width:1120px;margin:0 auto;padding:64px 24px 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:44px;align-items:center">
+    <div>
+      <div style="display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:99px;background:var(--surf);border:1px solid var(--acc-line);color:var(--acc-ink);font:700 11px/1 var(--mono);letter-spacing:.1em;margin-bottom:20px">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path></svg>
+        RUNS ON YOUR OWN PC
+      </div>
+      <h1 style="font-size:clamp(38px,4.4vw,56px);line-height:1.05;font-weight:800">Type a script.<br>Hear it in your voice.</h1>
+      <p style="margin-top:18px;font-size:17.5px;color:var(--soft);max-width:24em">Record a few minutes of talking. Then type anything, and hear yourself say it.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:11px;margin-top:26px">
+        <a href="#pricing" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;border-radius:13px;background:var(--acc);color:#fff;font-weight:800;font-size:16px;box-shadow:0 14px 30px -14px var(--acc)" class="hv1">
+          Get VoiceClone
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
+        </a>
+        <a href="#pricing" style="display:inline-flex;align-items:center;gap:9px;padding:15px 24px;border-radius:13px;background:var(--surf);border:1px solid var(--line2);color:var(--ink);font-weight:700;font-size:16px" class="hv2">
+          Try it free
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 21h16"></path></svg>
+        </a>
+      </div>
+
+      <div style="margin-top:28px;max-width:430px">
+        <div style="display:flex;align-items:center;gap:13px;padding:13px 15px;border:1px solid var(--acc-line);border-radius:15px;background:var(--surf);box-shadow:var(--shadow)">
+          <button data-clip="clips/hero.mp3" title="Play the clip" style="width:42px;height:42px;flex:none;border-radius:50%;border:0;background:var(--acc);color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -8px var(--acc)" class="hv3">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg>
+          </button>
+          <div style="flex:1;min-width:0">
+            <div style="font-weight:700;font-size:13.5px">This clip was typed, not recorded.</div>
+            <div style="font:600 11px/1 var(--mono);color:var(--faint);margin-top:4px">TRAINED CLONE · 0:08</div>
+          </div>
+          <svg viewBox="0 0 120 28" preserveAspectRatio="none" style="width:96px;height:26px;flex:none;color:var(--acc-line)"><path d="M2 14v0M6 9v10M10 5v18M14 11v6M18 3v22M22 8v12M26 12v4M30 6v16M34 10v8M38 4v20M42 9v10M46 13v2M50 7v14M54 11v6M58 5v18M62 10v8M66 14v0M70 8v12M74 12v4M78 6v16M82 11v6M86 4v20M90 9v10M94 13v2M98 7v14M102 11v6M106 14v0M110 10v8M114 12v4M118 13v2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path></svg>
+        </div>
+        <div style="font-size:12px;color:var(--faint);margin-top:9px;padding-left:2px">“Power BI is where the story really comes together.”</div>
+      </div>
+    </div>
+
+    <div>
+      <div style="border-radius:16px;border:1px solid var(--line2);background:var(--surf);box-shadow:var(--shadow-lg);overflow:hidden">
+        <div style="display:flex;align-items:center;gap:7px;padding:10px 14px;background:var(--bg);border-bottom:1px solid var(--line)">
+          <i style="width:9px;height:9px;border-radius:50%;background:var(--line2);display:block"></i>
+          <i style="width:9px;height:9px;border-radius:50%;background:var(--line2);display:block"></i>
+          <i style="width:9px;height:9px;border-radius:50%;background:var(--line2);display:block"></i>
+          <span style="flex:1"></span>
+          <span style="font:600 10.5px/1 var(--mono);color:var(--faint)">VOICECLONE · OFFLINE</span>
+        </div>
+        <img src="shots/app-voice.png" alt="The VoiceClone app, showing the Voice tab with one trained voice saved" width="914" height="540">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)">
+  <div style="max-width:1120px;margin:0 auto;padding:22px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+    <div style="display:flex;align-items:flex-start;gap:11px">
+      <span style="width:30px;height:30px;flex:none;border-radius:9px;background:var(--ok-tint);color:var(--ok);display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path></svg></span>
+      <div><b style="font-size:14.5px">Offline.</b> <span style="color:var(--soft);font-size:14.5px">Never uploaded.</span></div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:11px">
+      <span style="width:30px;height:30px;flex:none;border-radius:9px;background:var(--acc-tint);color:var(--acc-ink);display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v10M9 9.5h6M9 14.5h6"></path><circle cx="12" cy="12" r="9"></circle></svg></span>
+      <div><b style="font-size:14.5px">Pay once.</b> <span style="color:var(--soft);font-size:14.5px">No subscription.</span></div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:11px">
+      <span style="width:30px;height:30px;flex:none;border-radius:9px;background:var(--brand-tint);color:var(--brand-ink);display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"></path></svg></span>
+      <div><b style="font-size:14.5px">Checked.</b> <span style="color:var(--soft);font-size:14.5px">Every word verified.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="hear" style="background:var(--surf)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px">
+    <div style="max-width:640px">
+      <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--acc-ink);margin-bottom:14px">LISTEN FIRST</div>
+      <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">One sentence, three ways.</h2>
+      <p style="margin-top:14px;font-size:16px;color:var(--soft)">Straight out of the app. Nothing edited afterward.</p>
+    </div>
+
+    <div style="margin-top:26px;padding:16px 18px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);font-size:15.5px;line-height:1.7">
+      “One small comment taught me more than any course ever did.”
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:16px">
+      <div style="border:1px solid var(--line);border-radius:16px;background:var(--surf);box-shadow:var(--shadow);padding:16px 18px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px">
+          <span style="font:700 10.5px/1 var(--mono);letter-spacing:.09em;color:var(--soft);background:var(--bg);border:1px solid var(--line);padding:5px 9px;border-radius:99px">REAL RECORDING</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <button data-clip="clips/real.mp3" style="width:40px;height:40px;flex:none;border-radius:50%;border:1px solid var(--line2);background:var(--surf);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center" class="hv2"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+          <svg viewBox="0 0 120 28" preserveAspectRatio="none" style="flex:1;height:26px;color:var(--line2)"><path d="M2 13v2M6 9v10M10 5v18M14 11v6M18 4v20M22 8v12M26 12v4M30 6v16M34 10v8M38 5v18M42 9v10M46 13v2M50 7v14M54 11v6M58 6v16M62 10v8M66 13v2M70 8v12M74 12v4M78 7v14M82 11v6M86 5v18M90 9v10M94 13v2M98 8v12M102 11v6M106 13v2M110 10v8M114 12v4M118 13v2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path></svg>
+          <span style="font:600 11px/1 var(--mono);color:var(--faint)">0:08</span>
+        </div>
+
+      </div>
+
+      <div style="border:1px solid var(--line);border-radius:16px;background:var(--surf);box-shadow:var(--shadow);padding:16px 18px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px">
+          <span style="font:700 10.5px/1 var(--mono);letter-spacing:.09em;color:var(--soft);background:var(--bg);border:1px solid var(--line);padding:5px 9px;border-radius:99px">INSTANT CLONE</span>
+          <span style="font-size:12px;color:var(--faint)">ready in about a minute</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <button data-clip="clips/instant.mp3" style="width:40px;height:40px;flex:none;border-radius:50%;border:1px solid var(--line2);background:var(--surf);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center" class="hv2"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+          <svg viewBox="0 0 120 28" preserveAspectRatio="none" style="flex:1;height:26px;color:var(--line2)"><path d="M2 12v4M6 8v12M10 6v16M14 11v6M18 5v18M22 9v10M26 13v2M30 7v14M34 11v6M38 6v16M42 10v8M46 13v2M50 8v12M54 12v4M58 6v16M62 11v6M66 13v2M70 9v10M74 12v4M78 7v14M82 11v6M86 6v16M90 10v8M94 13v2M98 8v12M102 12v4M106 13v2M110 11v6M114 12v4M118 13v2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path></svg>
+          <span style="font:600 11px/1 var(--mono);color:var(--faint)">0:08</span>
+        </div>
+        <p style="font-size:12.5px;color:var(--faint);margin-top:12px">Close, not perfect.</p>
+      </div>
+
+      <div style="border:1px solid var(--acc);border-radius:16px;background:var(--acc-tint);box-shadow:var(--shadow);padding:16px 18px">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px">
+          <span style="font:700 10.5px/1 var(--mono);letter-spacing:.09em;color:#fff;background:var(--acc);padding:5px 9px;border-radius:99px">TRAINED CLONE</span>
+          <span style="font-size:12px;color:var(--acc-ink)">30 to 90 minutes on your graphics card</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <button data-clip="clips/trained.mp3" style="width:40px;height:40px;flex:none;border-radius:50%;border:0;background:var(--acc);color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -8px var(--acc)" class="hv3"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+          <svg viewBox="0 0 120 28" preserveAspectRatio="none" style="flex:1;height:26px;color:var(--acc)"><path d="M2 13v2M6 9v10M10 5v18M14 11v6M18 4v20M22 8v12M26 12v4M30 6v16M34 10v8M38 5v18M42 9v10M46 13v2M50 7v14M54 11v6M58 6v16M62 10v8M66 13v2M70 8v12M74 12v4M78 7v14M82 11v6M86 5v18M90 9v10M94 13v2M98 8v12M102 11v6M106 13v2M110 10v8M114 12v4M118 13v2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"></path></svg>
+          <span style="font:600 11px/1 var(--mono);color:var(--acc-ink)">0:08</span>
+        </div>
+        <p style="font-size:12.5px;color:var(--acc-ink);margin-top:12px">A near identical match.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px">
+    <div style="max-width:620px;margin-bottom:34px">
+      <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--acc-ink);margin-bottom:14px">HOW IT WORKS</div>
+      <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">Four steps, start to finished file.</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px">
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column">
+        <div style="padding:18px 20px 14px">
+          <span style="display:inline-flex;width:28px;height:28px;border-radius:9px;background:var(--acc);color:#fff;align-items:center;justify-content:center;font:800 13px/1 var(--mono);margin-bottom:12px">1</span>
+          <div style="font-weight:800;font-size:16px">Talk for a few minutes.</div>
+          <p style="font-size:14px;color:var(--soft);margin-top:6px">Record or upload. 1 to 3 minutes is enough.</p>
+        </div>
+        <div style="margin-top:auto;border-top:1px solid var(--line);background:var(--bg2);height:166px;padding:14px 14px 0;overflow:hidden">
+          <img src="shots/step-trim.png" alt="The add a voice window, trimming a recording down to the clear speech" width="742" height="486" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:10px 10px 0 0;border:1px solid var(--line);border-bottom:0">
+        </div>
+      </div>
+
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column">
+        <div style="padding:18px 20px 14px">
+          <span style="display:inline-flex;width:28px;height:28px;border-radius:9px;background:var(--acc);color:#fff;align-items:center;justify-content:center;font:800 13px/1 var(--mono);margin-bottom:12px">2</span>
+          <div style="font-weight:800;font-size:16px">Type your script.</div>
+          <p style="font-size:14px;color:var(--soft);margin-top:6px">Paste anything you want spoken.</p>
+        </div>
+        <div style="margin-top:auto;border-top:1px solid var(--line);background:var(--bg2);height:166px;padding:14px 14px 0;overflow:hidden">
+          <img src="shots/step-write.png" alt="The Write screen with the script box and the voice that will speak it" width="862" height="385" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:10px 10px 0 0;border:1px solid var(--line);border-bottom:0">
+        </div>
+      </div>
+
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column">
+        <div style="padding:18px 20px 14px">
+          <span style="display:inline-flex;width:28px;height:28px;border-radius:9px;background:var(--acc);color:#fff;align-items:center;justify-content:center;font:800 13px/1 var(--mono);margin-bottom:12px">3</span>
+          <div style="font-weight:800;font-size:16px">Every word gets checked.</div>
+          <p style="font-size:14px;color:var(--soft);margin-top:6px">Anything that came out wrong is flagged.</p>
+        </div>
+        <div style="margin-top:auto;border-top:1px solid var(--line);background:var(--bg2);height:166px;padding:14px 14px 0;overflow:hidden">
+          <img src="shots/app-result.png" alt="The app reporting that one word came out wrong and one was missed, above the timeline" width="914" height="540" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:10px 10px 0 0;border:1px solid var(--line);border-bottom:0">
+        </div>
+      </div>
+
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column">
+        <div style="padding:18px 20px 14px">
+          <span style="display:inline-flex;width:28px;height:28px;border-radius:9px;background:var(--acc);color:#fff;align-items:center;justify-content:center;font:800 13px/1 var(--mono);margin-bottom:12px">4</span>
+          <div style="font-weight:800;font-size:16px">Click a bad word to fix it.</div>
+          <p style="font-size:14px;color:var(--soft);margin-top:6px">Just that word is respoken. Then export.</p>
+        </div>
+        <div style="margin-top:auto;border-top:1px solid var(--line);background:var(--bg2);height:166px;padding:14px;overflow:hidden;display:flex;align-items:center">
+          <div style="display:flex;flex-wrap:wrap;gap:5px;padding:14px;background:var(--surf);border:1px solid var(--line);border-radius:10px;width:100%">
+            <span style="padding:3px 9px;border-radius:8px;background:var(--ok-tint);color:var(--ok);font-size:13px">power</span>
+            <span style="padding:3px 9px;border-radius:8px;background:var(--bad-tint);color:var(--bad);font-size:13px;text-decoration:underline wavy">bee</span>
+            <span style="padding:3px 9px;border-radius:8px;background:var(--bad-tint);color:var(--bad);font-size:13px;text-decoration:underline wavy">eye</span>
+            <span style="padding:3px 9px;border-radius:8px;background:var(--ok-tint);color:var(--ok);font-size:13px">is</span>
+            <span style="padding:3px 9px;border-radius:8px;background:var(--ok-tint);color:var(--ok);font-size:13px">where</span>
+            <span style="padding:3px 9px;border-radius:8px;background:var(--ok-tint);color:var(--ok);font-size:13px">the</span>
+            <span style="padding:3px 9px;border-radius:8px;background:var(--ok-tint);color:var(--ok);font-size:13px">story</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surf)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px 104px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:40px;align-items:center">
+      <div>
+        <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--bad);margin-bottom:14px">THE WORD CHECK</div>
+        <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">You never have to listen for mistakes. The app already did.</h2>
+        <p style="margin-top:16px;font-size:16.5px;color:var(--soft)">Other tools hand you audio and hope you listen carefully. See a red word? Click it. The rest of the take stays exactly as it was.</p>
+
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+            <button data-clip="clips/flagged.mp3" style="width:38px;height:38px;flex:none;border-radius:50%;border:1px solid var(--line2);background:var(--surf);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center" class="hv2"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+            <div style="flex:1;min-width:0">
+              <div style="font-weight:700;font-size:13.5px">One word came out wrong</div>
+              <div style="font:600 10.5px/1 var(--mono);color:var(--faint);margin-top:4px">BEFORE · 0:08</div>
+            </div>
+            <span style="padding:4px 9px;border-radius:99px;background:var(--bad-tint);color:var(--bad);font:700 10px/1 var(--mono)">FLAGGED</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid var(--ok);border-radius:14px;background:var(--ok-tint)">
+            <button data-clip="clips/fixed.mp3" style="width:38px;height:38px;flex:none;border-radius:50%;border:0;background:var(--ok);color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+            <div style="flex:1;min-width:0">
+              <div style="font-weight:700;font-size:13.5px">The same take, one word fixed</div>
+              <div style="font:600 10.5px/1 var(--mono);color:var(--ok);margin-top:4px">AFTER · 0:08 · ONE CLICK</div>
+            </div>
+            <span style="padding:4px 9px;border-radius:99px;background:var(--surf);color:var(--ok);font:700 10px/1 var(--mono)">CLEAN</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="position:relative">
+        <div style="border-radius:16px;border:1px solid var(--line2);background:var(--surf);box-shadow:var(--shadow-lg);overflow:hidden">
+          <div style="display:flex;align-items:center;gap:7px;padding:10px 14px;background:var(--bg);border-bottom:1px solid var(--line)">
+            <i style="width:9px;height:9px;border-radius:50%;background:var(--line2);display:block"></i>
+            <i style="width:9px;height:9px;border-radius:50%;background:var(--line2);display:block"></i>
+            <i style="width:9px;height:9px;border-radius:50%;background:var(--line2);display:block"></i>
+            <span style="flex:1"></span>
+            <span style="font:600 10.5px/1 var(--mono);color:var(--faint)">RESULT · EVERY WORD CHECKED</span>
+          </div>
+          <img src="shots/app-result.png" alt="The result screen with the timeline, a score of 87, and the words that came out wrong" width="914" height="540">
+        </div>
+        <div style="position:absolute;left:-14px;bottom:-26px;width:min(78%,340px);border-radius:12px;border:1px solid var(--acc-line);background:var(--surf);box-shadow:var(--shadow-lg);overflow:hidden">
+          <img src="shots/inset-check.png" alt="Close up: the app naming the word that came out wrong" width="862" height="82">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--brand);color:#fff">
+  <div style="max-width:1120px;margin:0 auto;padding:64px 24px">
+    <h2 style="font-size:clamp(27px,2.9vw,36px);line-height:1.14;font-weight:800;max-width:19em">Your voice stays on your computer. Full stop.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px;margin-top:34px">
+      <div>
+        <span style="display:inline-flex;width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.14);align-items:center;justify-content:center;margin-bottom:13px">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+        </span>
+        <div style="font-weight:800;font-size:16px">No server to send it to</div>
+        <p style="font-size:14.5px;color:rgba(255,255,255,.8);margin-top:6px">A program on your PC, not an account on ours.</p>
+      </div>
+      <div>
+        <span style="display:inline-flex;width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.14);align-items:center;justify-content:center;margin-bottom:13px">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 21h16"></path></svg>
+        </span>
+        <div style="font-weight:800;font-size:16px">One download, then nothing</div>
+        <p style="font-size:14.5px;color:rgba(255,255,255,.8);margin-top:6px">The AI engine installs once. After that, no internet.</p>
+      </div>
+      <div>
+        <span style="display:inline-flex;width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.14);align-items:center;justify-content:center;margin-bottom:13px">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+        </span>
+        <div style="font-weight:800;font-size:16px">The files are yours</div>
+        <p style="font-size:14.5px;color:rgba(255,255,255,.8);margin-top:6px">Keep them, sell with them, back them up.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surf)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px">
+    <div style="max-width:640px;margin-bottom:32px">
+      <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--acc-ink);margin-bottom:14px">TWO LEVELS OF CLONE</div>
+      <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">We'll be straight with you about both.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));gap:32px;align-items:center">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="border:1px solid var(--line);border-radius:16px;background:var(--bg2);padding:18px 20px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="width:32px;height:32px;flex:none;border-radius:10px;background:var(--surf);border:1px solid var(--line);color:var(--soft);display:inline-flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l4 2"></path></svg></span>
+            <div style="font-weight:800;font-size:16.5px">Instant</div>
+            <span style="flex:1"></span>
+            <span style="font:700 10.5px/1 var(--mono);color:var(--soft)">ABOUT A MINUTE</span>
+          </div>
+          <p style="font-size:14.5px;color:var(--soft);margin-top:10px">Ready a minute after recording. Close to you, not perfect.</p>
+        </div>
+        <div style="border:1px solid var(--acc);border-radius:16px;background:var(--acc-tint);padding:18px 20px">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="width:32px;height:32px;flex:none;border-radius:10px;background:var(--surf);color:var(--acc-ink);display:inline-flex;align-items:center;justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l2.7 5.9 6.3.7-4.7 4.3 1.3 6.1L12 17l-5.6 3 1.3-6.1L3 9.6l6.3-.7z"></path></svg></span>
+            <div style="font-weight:800;font-size:16.5px">Pro training</div>
+            <span style="flex:1"></span>
+            <span style="font:700 10.5px/1 var(--mono);color:var(--acc-ink)">30 TO 90 MINUTES</span>
+          </div>
+          <p style="font-size:14.5px;color:var(--acc-ink);margin-top:10px">Trains on your own graphics card. 8 to 20 minutes of recording trains best, and the result is a near identical match.</p>
+        </div>
+      </div>
+      <div style="border-radius:16px;border:1px solid var(--line2);background:var(--surf);box-shadow:var(--shadow-lg);overflow:hidden">
+        <img src="shots/train.png" alt="The training window showing the hardware it found, how much audio there is, and how long it will take" width="561" height="287">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px">
+    <div style="max-width:640px;margin-bottom:32px">
+      <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--acc-ink);margin-bottom:14px">ALSO IN THE BOX</div>
+      <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">A small studio, not just a text box.</h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px">
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column">
+        <div style="padding:18px 20px 14px">
+          <div style="font-weight:800;font-size:16px">Enhance any recording.</div>
+          <p style="font-size:14px;color:var(--soft);margin-top:6px">Noise, hum, levels. Before and after, one save.</p>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:14px">
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:var(--bg2)">
+              <button data-clip="clips/noisy.mp3" style="width:32px;height:32px;flex:none;border-radius:50%;border:1px solid var(--line2);background:var(--surf);color:var(--soft);cursor:pointer;display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+              <span style="flex:1;font-size:13px;font-weight:600">Noisy recording</span>
+              <span style="font:600 10.5px/1 var(--mono);color:var(--faint)">0:10</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--acc-line);border-radius:11px;background:var(--acc-tint)">
+              <button data-clip="clips/enhanced.mp3" style="width:32px;height:32px;flex:none;border-radius:50%;border:0;background:var(--acc);color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+              <span style="flex:1;font-size:13px;font-weight:600">The same file, enhanced</span>
+              <span style="font:600 10.5px/1 var(--mono);color:var(--acc-ink)">0:10</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:auto;border-top:1px solid var(--line);background:var(--bg2);height:190px;padding:14px 14px 0;overflow:hidden">
+          <img src="shots/card-enhance.png" alt="The enhance tool with before and after players side by side" width="862" height="300" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:10px 10px 0 0;border:1px solid var(--line);border-bottom:0">
+        </div>
+      </div>
+
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:18px 20px">
+        <div style="font-weight:800;font-size:16px">14 voices included.</div>
+        <p style="font-size:14px;color:var(--soft);margin-top:6px">Make voiceovers before you record a thing.</p>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-top:14px">
+          <div style="display:flex;align-items:center;gap:11px;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:var(--bg2)">
+            <span style="width:30px;height:30px;flex:none;border-radius:50%;background:var(--brand-tint);color:var(--brand-ink);display:inline-flex;align-items:center;justify-content:center;font:800 12px/1 var(--sans)">B</span>
+            <span style="flex:1;font-size:13.5px;font-weight:600">Bala</span>
+            <button data-clip="clips/sample-bala.mp3" style="width:30px;height:30px;flex:none;border-radius:9px;border:1px solid var(--line2);background:var(--surf);color:var(--soft);cursor:pointer;display:inline-flex;align-items:center;justify-content:center" class="hv2"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+          </div>
+          <div style="display:flex;align-items:center;gap:11px;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:var(--bg2)">
+            <span style="width:30px;height:30px;flex:none;border-radius:50%;background:var(--brand-tint);color:var(--brand-ink);display:inline-flex;align-items:center;justify-content:center;font:800 12px/1 var(--sans)">R</span>
+            <span style="flex:1;font-size:13.5px;font-weight:600">Ruth</span>
+            <button data-clip="clips/sample-ruth.mp3" style="width:30px;height:30px;flex:none;border-radius:9px;border:1px solid var(--line2);background:var(--surf);color:var(--soft);cursor:pointer;display:inline-flex;align-items:center;justify-content:center" class="hv2"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+          </div>
+          <div style="display:flex;align-items:center;gap:11px;padding:10px 12px;border:1px solid var(--line);border-radius:11px;background:var(--bg2)">
+            <span style="width:30px;height:30px;flex:none;border-radius:50%;background:var(--brand-tint);color:var(--brand-ink);display:inline-flex;align-items:center;justify-content:center;font:800 12px/1 var(--sans)">T</span>
+            <span style="flex:1;font-size:13.5px;font-weight:600">Tom</span>
+            <button data-clip="clips/sample-tom.mp3" style="width:30px;height:30px;flex:none;border-radius:9px;border:1px solid var(--line2);background:var(--surf);color:var(--soft);cursor:pointer;display:inline-flex;align-items:center;justify-content:center" class="hv2"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column">
+        <div style="padding:18px 20px 14px">
+          <div style="font-weight:800;font-size:16px">Sound effects on the timeline.</div>
+          <p style="font-size:14px;color:var(--soft);margin-top:6px">Hundreds included. Drop one onto your voice.</p>
+        </div>
+        <div style="margin-top:auto;border-top:1px solid var(--line);background:var(--bg2);height:190px;padding:14px 14px 0;overflow:hidden">
+          <img src="shots/app-tools.png" alt="The tools tab with the enhance panel and the sound effects library" width="914" height="540" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:10px 10px 0 0;border:1px solid var(--line);border-bottom:0">
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:14px;margin-top:16px;padding:16px 20px;border:1px solid var(--acc-line);border-radius:16px;background:var(--surf);box-shadow:var(--shadow)">
+      <button data-clip="clips/narration.mp3" style="width:44px;height:44px;flex:none;border-radius:50%;border:0;background:var(--acc);color:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -8px var(--acc)" class="hv3"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg></button>
+      <div style="flex:1;min-width:0">
+        <div style="font-weight:800;font-size:15px">Twenty seconds of narration, typed</div>
+        <div style="font-size:12.5px;color:var(--soft);margin-top:3px">A whole paragraph, in a trained clone.</div>
+      </div>
+      <span style="font:600 11px/1 var(--mono);color:var(--faint)">0:20</span>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surf)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px">
+    <div style="max-width:620px;margin-bottom:30px">
+      <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--acc-ink);margin-bottom:14px">COMPARED TO CLOUD TOOLS</div>
+      <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">The honest difference.</h2>
+    </div>
+
+    <table style="width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:15px">
+      <thead>
+        <tr style="background:var(--bg2)">
+          <th style="text-align:left;padding:14px 18px;font:700 11px/1 var(--mono);letter-spacing:.1em;color:var(--faint);border-bottom:1px solid var(--line)"></th>
+          <th style="text-align:left;padding:14px 18px;font-weight:800;font-size:14.5px;color:var(--acc-ink);border-bottom:1px solid var(--line);border-left:1px solid var(--line)">VoiceClone</th>
+          <th style="text-align:left;padding:14px 18px;font-weight:700;font-size:14.5px;color:var(--soft);border-bottom:1px solid var(--line);border-left:1px solid var(--line)">Cloud tools</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:14px 18px;font-weight:700;border-bottom:1px solid var(--line)">Price</td>
+          <td style="padding:14px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);background:var(--acc-tint);font-weight:600">Pay once</td>
+          <td style="padding:14px 18px;color:var(--soft);border-bottom:1px solid var(--line);border-left:1px solid var(--line)">Pay every month</td>
+        </tr>
+        <tr>
+          <td style="padding:14px 18px;font-weight:700;border-bottom:1px solid var(--line)">Your voice</td>
+          <td style="padding:14px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);background:var(--acc-tint);font-weight:600">Stays on your PC</td>
+          <td style="padding:14px 18px;color:var(--soft);border-bottom:1px solid var(--line);border-left:1px solid var(--line)">Uploaded to their servers</td>
+        </tr>
+        <tr>
+          <td style="padding:14px 18px;font-weight:700;border-bottom:1px solid var(--line)">Mistakes</td>
+          <td style="padding:14px 18px;border-bottom:1px solid var(--line);border-left:1px solid var(--line);background:var(--acc-tint);font-weight:600">Every word checked, click to fix</td>
+          <td style="padding:14px 18px;color:var(--soft);border-bottom:1px solid var(--line);border-left:1px solid var(--line)">Listen and re-generate</td>
+        </tr>
+        <tr>
+          <td style="padding:14px 18px;font-weight:700">Your files</td>
+          <td style="padding:14px 18px;border-left:1px solid var(--line);background:var(--acc-tint);font-weight:600">Yours forever</td>
+          <td style="padding:14px 18px;color:var(--soft);border-left:1px solid var(--line)">Tied to your account</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:14.5px;color:var(--soft);margin-top:16px;max-width:44em">We don't claim better sound. We claim you own it.</p>
+  </div>
+</section>
+
+<section id="pricing" style="background:var(--bg);border-top:1px solid var(--line)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px">
+    <div style="max-width:620px;margin-bottom:32px">
+      <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--acc-ink);margin-bottom:14px">PRICING</div>
+      <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">Pay once. That's the whole pricing page.</h2>
+      <p style="margin-top:14px;font-size:16px;color:var(--soft)">No monthly fee, no credit limit meter, no plan tiers.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;align-items:start">
+      <div style="background:var(--surf);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:24px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="font-weight:800;font-size:18px">Free</div>
+          <span style="font:700 10.5px/1 var(--mono);color:var(--soft);background:var(--bg);border:1px solid var(--line);padding:5px 9px;border-radius:99px">NO ACCOUNT</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px;margin-top:16px">
+          <div style="display:flex;align-items:flex-start;gap:9px;font-size:14.5px"><span style="color:var(--ok);display:inline-flex;margin-top:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg></span>1 custom voice</div>
+          <div style="display:flex;align-items:flex-start;gap:9px;font-size:14.5px"><span style="color:var(--ok);display:inline-flex;margin-top:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg></span><b>One full Pro training</b></div>
+          <div style="display:flex;align-items:flex-start;gap:9px;font-size:14.5px"><span style="color:var(--ok);display:inline-flex;margin-top:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg></span>A few generations</div>
+        </div>
+        <a href="https://designesh.gumroad.com/l/voiceclone?ref=site-free" style="display:flex;align-items:center;justify-content:center;gap:9px;margin-top:22px;padding:14px 20px;border-radius:12px;background:var(--surf);border:1px solid var(--line2);color:var(--ink);font-weight:700;font-size:15px" class="hv2">
+          Download free
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 21h16"></path></svg>
+        </a>
+      </div>
+
+      <div style="position:relative;background:var(--surf);border:2px solid var(--acc);border-radius:20px;box-shadow:var(--shadow-lg);padding:24px">
+        <span style="position:absolute;top:-11px;left:24px;padding:5px 11px;border-radius:99px;background:var(--acc);color:#fff;font:700 10px/1 var(--mono);letter-spacing:.1em">EVERYTHING, ONE PAYMENT</span>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="font-weight:800;font-size:18px">Full</div>
+          <span style="font:700 10.5px/1 var(--mono);color:var(--acc-ink);background:var(--acc-tint);padding:5px 9px;border-radius:99px">LIFETIME</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px;margin-top:16px">
+          <div style="display:flex;align-items:flex-start;gap:9px;font-size:14.5px"><span style="color:var(--ok);display:inline-flex;margin-top:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg></span>Unlimited voices and generations</div>
+          <div style="display:flex;align-items:flex-start;gap:9px;font-size:14.5px"><span style="color:var(--ok);display:inline-flex;margin-top:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg></span>Pro training any time</div>
+          <div style="display:flex;align-items:flex-start;gap:9px;font-size:14.5px"><span style="color:var(--ok);display:inline-flex;margin-top:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg></span>Enhance tool, sound effects, 14 voices</div>
+          <div style="display:flex;align-items:flex-start;gap:9px;font-size:14.5px"><span style="color:var(--ok);display:inline-flex;margin-top:3px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg></span>WAV, MP3, subtitles, transcripts</div>
+        </div>
+        <a href="https://designesh.gumroad.com/l/voiceclone?ref=site-pricing" style="display:flex;align-items:center;justify-content:center;gap:9px;margin-top:22px;padding:15px 20px;border-radius:12px;background:var(--acc);color:#fff;font-weight:800;font-size:15.5px;box-shadow:0 12px 26px -14px var(--acc)" class="hv1">
+          See price on Gumroad
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <p style="font-size:13px;color:var(--faint);margin-top:18px;max-width:52em">Checkout and download are handled by Gumroad.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
+      <span style="font:600 11px/1 var(--mono);color:var(--soft);background:var(--surf);border:1px solid var(--line);padding:7px 11px;border-radius:99px">WINDOWS 10 / 11</span>
+      <span style="font:600 11px/1 var(--mono);color:var(--soft);background:var(--surf);border:1px solid var(--line);padding:7px 11px;border-radius:99px">DISK SPACE FOR THE AI ENGINE</span>
+      <span style="font:600 11px/1 var(--mono);color:var(--soft);background:var(--surf);border:1px solid var(--line);padding:7px 11px;border-radius:99px">NVIDIA GPU OPTIONAL · FASTER TRAINING</span>
+      <span style="font:600 11px/1 var(--mono);color:var(--soft);background:var(--surf);border:1px solid var(--line);padding:7px 11px;border-radius:99px">WORKS ON CPU · SLOWER</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--surf);border-top:1px solid var(--line)">
+  <div style="max-width:820px;margin:0 auto;padding:72px 24px">
+    <div style="margin-bottom:28px">
+      <div style="font:700 11px/1 var(--mono);letter-spacing:.14em;color:var(--acc-ink);margin-bottom:14px">QUESTIONS</div>
+      <h2 style="font-size:clamp(28px,3vw,38px);line-height:1.12;font-weight:800">Before you buy.</h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2);padding:0" open="">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">Does it really work offline?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">Yes. One engine download at install, then no internet is needed for anything.</div>
+      </details>
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">Is my voice uploaded anywhere?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">No. There is nowhere for it to go.</div>
+      </details>
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">How much do I need to record?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">1 to 3 minutes gets an instant clone. 8 to 20 minutes gives Pro training its best result.</div>
+      </details>
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">Do I need a gaming PC?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">No. An NVIDIA card makes training faster, but CPU works.</div>
+      </details>
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">How close is the clone, honestly?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">Instant is close, not perfect. Pro trained is near identical.</div>
+      </details>
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">Is there a subscription?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">No. One payment, and the app is yours.</div>
+      </details>
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">Can I clone someone else's voice?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">Only your own, or one whose owner said yes.</div>
+      </details>
+      <details style="border:1px solid var(--line);border-radius:14px;background:var(--bg2)">
+        <summary style="display:flex;align-items:center;gap:12px;padding:15px 18px;font-weight:700;font-size:15px">What if it doesn't work for me?<span style="flex:1"></span><span style="color:var(--faint);font:600 12px/1 var(--mono)">＋</span></summary>
+        <div style="padding:0 18px 16px;font-size:14.5px;color:var(--soft)">Start free. If you bought and it isn't for you, email me within the refund window shown at checkout.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg2);border-top:1px solid var(--line)">
+  <div style="max-width:1120px;margin:0 auto;padding:72px 24px;text-align:center">
+    <h2 style="font-size:clamp(28px,3.2vw,40px);line-height:1.1;font-weight:800;max-width:20em;margin:0 auto">Try it free. Train one full clone on us.</h2>
+    <p style="margin:16px auto 0;font-size:16.5px;color:var(--soft);max-width:34em">Hear the real thing in your own voice before paying anything.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:11px;justify-content:center;margin-top:26px">
+      <a href="#pricing" style="display:inline-flex;align-items:center;gap:9px;padding:15px 26px;border-radius:13px;background:var(--acc);color:#fff;font-weight:800;font-size:16px;box-shadow:0 14px 30px -14px var(--acc)" class="hv1">
+        Get VoiceClone
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"></path></svg>
+      </a>
+      <a href="#pricing" style="display:inline-flex;align-items:center;gap:9px;padding:15px 24px;border-radius:13px;background:var(--surf);border:1px solid var(--line2);color:var(--ink);font-weight:700;font-size:16px" class="hv2">
+        Try it free
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 21h16"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--ink);color:rgba(255,255,255,.72)">
+  <div style="max-width:1120px;margin:0 auto;padding:44px 24px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
+          <div style="width:28px;height:28px;border-radius:9px;background:var(--acc);display:flex;align-items:flex-end;justify-content:center;gap:2px;padding:7px 6px">
+            <i style="display:block;flex:1;height:38%;background:#fff;border-radius:99px"></i>
+            <i style="display:block;flex:1;height:80%;background:#fff;border-radius:99px"></i>
+            <i style="display:block;flex:1;height:100%;background:#fff;border-radius:99px"></i>
+            <i style="display:block;flex:1;height:58%;background:#fff;border-radius:99px"></i>
+          </div>
+          <span style="font-weight:800;font-size:16px;color:#fff;letter-spacing:-.03em">VoiceClone</span>
+        </div>
+        <p style="font-size:13.5px">Clone your own voice, or one whose owner said yes. Built for that, and only that.</p>
+      </div>
+      <div>
+        <div style="font:700 10.5px/1 var(--mono);letter-spacing:.13em;color:rgba(255,255,255,.45);margin-bottom:11px">NEEDS</div>
+        <p style="font-size:13.5px">Windows 10 or 11 · disk space for the AI engine · NVIDIA card optional.</p>
+      </div>
+      <div>
+        <div style="font:700 10.5px/1 var(--mono);letter-spacing:.13em;color:rgba(255,255,255,.45);margin-bottom:11px">PAGES</div>
+        <div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px">
+          <a href="privacy.html" style="color:rgba(255,255,255,.72)" class="hv4">Privacy</a>
+          <a href="guide.html" style="color:rgba(255,255,255,.72)" class="hv4">Guide</a>
+          <a href="https://designesh.gumroad.com/l/voiceclone?ref=site-footer" style="color:rgba(255,255,255,.72)" class="hv4">Get it on Gumroad</a>
+        </div>
+      </div>
+      <div>
+        <div style="font:700 10.5px/1 var(--mono);letter-spacing:.13em;color:rgba(255,255,255,.45);margin-bottom:11px">MADE BY INAM</div>
+        <p style="font-size:13.5px"><a href="mailto:inam@trydesignesh.com" style="color:#fff">inam@trydesignesh.com</a> · a reply from the person who wrote the code.</p>
+      </div>
+    </div>
+    <div style="margin-top:32px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font:600 11px/1.6 var(--mono);color:rgba(255,255,255,.45)">
+      NO COOKIES · NO TRACKING · NO FORMS ON THIS SITE
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var audio = new Audio(), current = null;
+  var PLAY = '<path d="M7 4l12 8-12 8z"></path>';
+  var PAUSE = '<path d="M6 4h4v16H6zM14 4h4v16h-4z"></path>';
+  function paint(btn, playing) {
+    var svg = btn.querySelector('svg');
+    if (svg) svg.innerHTML = playing ? PAUSE : PLAY;
+  }
+  document.querySelectorAll('[data-clip]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      if (current === btn && !audio.paused) { audio.pause(); return; }
+      if (current) paint(current, false);
+      current = btn;
+      audio.src = btn.getAttribute('data-clip');
+      audio.play().then(function () { paint(btn, true); })
+        .catch(function () { paint(btn, false); });
+    });
+  });
+  audio.addEventListener('pause', function () { if (current) paint(current, false); });
+  audio.addEventListener('ended', function () { if (current) paint(current, false); });
+})();
+</script>
+</body>
+</html>

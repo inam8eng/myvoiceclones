@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoiceClone — the guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#F6F2EA; --bg2:#FBF8F1; --surf:#FFFFFF;
+  --ink:#211C17; --soft:#6E6459; --faint:#9C9284;
+  --line:#E7DED0; --acc:#0B84E3; --acc-ink:#0866B4; --acc-tint:#E3F3FD; --acc-line:#AFD9F6;
+  --ok:#2E9E63; --ok-tint:#E5F4EB; --warn:#14508F; --warn-tint:#E3EDF8;
+  --bad:#C6473A; --bad-tint:#F9E9E6;
+  --shadow:0 1px 2px rgba(40,28,14,.05),0 14px 34px -20px rgba(70,45,20,.26);
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --sans:'Hanken Grotesk',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#16120D; --bg2:#1B1610; --surf:#221C15;
+    --ink:#F3ECE0; --soft:#AC9F8E; --faint:#7C7061;
+    --line:#322A20; --acc:#3FA9F5; --acc-ink:#8FD0FF; --acc-tint:#0E2739; --acc-line:#1E4667;
+    --ok:#45C07D; --ok-tint:#15291D; --warn:#7FB6EC; --warn-tint:#122539;
+    --bad:#E4685A; --bad-tint:#2E1A16;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:820px;margin:0 auto;padding:28px 24px 80px}
+a{color:var(--acc-ink)}
+header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+.mark{display:inline-flex;align-items:flex-end;gap:2px;width:30px;height:26px;padding:4px;background:var(--acc);border-radius:8px}
+.mark i{flex:1;background:#fff;border-radius:99px;display:block}
+h1{font-size:24px;margin:0;letter-spacing:-.02em;font-weight:800}
+.sub{color:var(--soft);font-size:14px;margin-bottom:26px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px 26px;margin-bottom:18px}
+h2{font-size:17px;margin:0 0 10px;font-weight:800;letter-spacing:-.01em}
+h3{font-size:14.5px;margin:18px 0 6px;font-weight:700}
+ul{margin:8px 0;padding-left:22px}
+li{margin:5px 0}
+.good,.bad2{padding:12px 16px;border-radius:12px;margin:10px 0;font-size:14.5px}
+.good{background:var(--ok-tint);border:1px solid color-mix(in srgb,var(--ok) 30%,transparent)}
+.bad2{background:var(--bad-tint);border:1px solid color-mix(in srgb,var(--bad) 30%,transparent)}
+.good b{color:var(--ok)} .bad2 b{color:var(--bad)}
+code{font-family:var(--mono);font-size:13px;background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:10px 0}
+td,th{border:1px solid var(--line);padding:8px 12px;text-align:left}
+th{background:var(--bg2);font-weight:700}
+.back{display:inline-block;margin-bottom:18px;font-weight:600;text-decoration:none;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">← Back to VoiceClone</a>
+<header>
+  <span class="mark"><i style="height:38%"></i><i style="height:78%"></i><i style="height:100%"></i><i style="height:60%"></i></span>
+  <h1>The guide</h1>
+</header>
+<div class="sub">Five minutes here saves you an hour of retries. Everything runs on your computer. Your voice never leaves it.</div>
+
+<!-- 1 RECORDING -->
+<div class="card">
+  <h2>1 · Recording a voice (do this right and everything else gets easy)</h2>
+  <p>The app copies whatever you give it. Give it a clean, natural recording and you get a clean, natural voice. Give it noise and you get noise.</p>
+
+  <h3>How long</h3>
+  <ul>
+    <li><b>1 to 3 minutes is the sweet spot for an instant clone.</b> 20 seconds is the minimum. More clean talking gives me more good moments to pick from.</li>
+    <li>Planning a <b>Pro clone</b> (real training, see section 4)? Record <b>8 to 20 minutes</b>. That is the single biggest quality lever there is.</li>
+    <li>It does not need to be one perfect take. Just keep talking. Anything over 10 minutes is trimmed.</li>
+  </ul>
+
+  <h3>Where and how</h3>
+  <ul>
+    <li><b>Quiet room.</b> No fan, no AC hum, no traffic, no other people. The app measures this and shows you a Noise check. You want the green chip.</li>
+    <li><b>One person only.</b> A second voice, even far away, confuses the clone.</li>
+    <li><b>No music.</b> Ever. Not even quiet background music.</li>
+    <li>Hold the phone or mic about <b>a hand's length</b> from your mouth. Too close pops, too far sounds thin and roomy.</li>
+    <li>Avoid empty rooms and bathrooms. Echo gets cloned too.</li>
+    <li>Turn OFF noise suppression and enhancement filters if your app has them. They smear the voice. I clean the noise myself, gently.</li>
+  </ul>
+
+  <h3>What to say</h3>
+  <ul>
+    <li><b>Talk, do not read.</b> Tell a story, describe your day, explain your work. Natural talking carries your real rhythm and melody. Flat reading gives a flat clone.</li>
+    <li>Vary it a little: a question, a short sentence, a longer one, a small pause to breathe.</li>
+    <li>Speak the way you want the clone to sound. If you whisper, you get a whispering clone.</li>
+  </ul>
+
+  <div class="good"><b>Good:</b> 60 seconds on your phone, quiet bedroom, telling the story of your week like you would tell a friend.</div>
+  <div class="bad2"><b>Bad:</b> 3 hours of a podcast with intro music, two voices, and a coffee machine in the background.</div>
+
+  <h3>The trim editor (your safety net)</h3>
+  <p>Right after you upload or record, you see the sound drawn as a waveform with a colored strip under it, second by second: <b style="color:var(--ok)">green</b> is clear voice, <b style="color:var(--warn)">blue</b> is usable, <b style="color:var(--bad)">red</b> is music or noise, gray is silence. Nothing is chosen for you: the wave starts dim, and what ships is what YOU pick.</p>
+  <ul>
+    <li><b>Drag across the good parts, then press ✓ Use selected.</b> Hold Shift to select more than one part; the total shows as you go, and the meter under the buttons tells you when you have enough.</li>
+    <li><b>✨ Auto</b> picks for you: full sentences of clear voice only, cut at natural pauses, never half a sentence.</li>
+    <li><b>🔇</b> appears ready only when noise was actually measured in your recording, and removes only that. <b>✦</b> enhances the sound, checked against your own voice so it can never change who you sound like. Click either again to hear your original.</li>
+    <li><b>▶ Result</b> plays exactly what the clone will learn from. If it sounds bad, the clone will too.</li>
+    <li>A clip from a video with sound effects or a music bed will show a lot of red. Select only the clean talking, and if too little is left, record fresh audio instead. Junk in, junk out. There is no trick around that.</li>
+  </ul>
+
+  <h3>The checks you will see</h3>
+  <table>
+    <tr><th>Check</th><th>What it means</th></tr>
+    <tr><td>Length</td><td>How much usable audio you gave after trimming.</td></tr>
+    <tr><td>Volume</td><td>How loud your speech is. Quiet is fixable, distorted is not.</td></tr>
+    <tr><td>Clipping</td><td>Distortion from recording too loud or too close. Re-record if red.</td></tr>
+    <tr><td>Noise</td><td>The gap between your voice and the background. Find a quieter room if red.</td></tr>
+    <tr><td>Speech</td><td>Whether I could hear clear words in the best part of your clip.</td></tr>
+  </table>
+
+  <h3>Fix the transcript (30 seconds, big payoff)</h3>
+  <p>After creating a voice, I show you what I heard in the chosen reference clip. Read it. If one word is wrong, fix it and save. The voice literally reads along with that transcript on every generation, so one wrong word there teaches wrong sounds everywhere.</p>
+</div>
+
+<!-- 2 SCRIPTS -->
+<div class="card">
+  <h2>2 · Writing text that sounds right</h2>
+
+  <h3>Abbreviations and short forms</h3>
+  <ul>
+    <li>Anything you type in ALL CAPS gets spelled out automatically. <code>VBA</code> becomes "Vee Bee Aay", <code>HEC</code> becomes "Aitch Ee Cee". Real words in caps (LOVE, YES) are left alone.</li>
+    <li>Some are already handled: <code>SQL</code> is spoken "Sequel", <code>AI</code> is "Aay Eye", <code>ChatGPT</code> is "Chat Jee Pee Tee".</li>
+    <li>For anything else, use the <b>My words</b> box on the main page. Type the word, then how it sounds. Example: <code>Designesh</code> say it like <code>dee zy nesh</code>. Saved once, used forever, per voice.</li>
+  </ul>
+
+  <h3>Your common words (do this once, early)</h3>
+  <p>Every person has 5 to 20 words they say all the time: your name, your brand, your city, your tools. Teach these in the first session. Two ways:</p>
+  <ul>
+    <li><b>My words</b> box: spell it the way it sounds. Fast, works for most words.</li>
+    <li><b>Record it</b>: if spelling tricks do not get it right (names are stubborn), select the word after generating, and say it once in the recording panel. The app locks in your real pronunciation and remembers it.</li>
+  </ul>
+
+  <h3>Punctuation and numbers</h3>
+  <ul>
+    <li>Write normal sentences with periods and commas. The voice breathes at commas and rests at periods.</li>
+    <li>Question marks give a rising tone. Use them.</li>
+    <li>Write numbers the way you want them spoken: <code>2026</code> may be read as a number, but "twenty twenty six" is always safe. Same for money and phone numbers.</li>
+    <li>Skip emoji and special symbols. They confuse the voice.</li>
+  </ul>
+
+  <h3>Length of one generation</h3>
+  <ul>
+    <li>One to four sentences per Generate gives the best control. You can always generate the next paragraph after.</li>
+    <li>Very long text in one go raises the chance of one bad word. That is what the takes and the word checks are for, but shorter is smoother.</li>
+  </ul>
+</div>
+
+<!-- 3 HOW IT WORKS -->
+<div class="card">
+  <h2>3 · How generation works (why this app is different)</h2>
+  <ul>
+    <li>I never give you one blind try. I make <b>several takes</b>, listen to each one with a speech recognizer, grade every word, and hand you the best take. Wrong takes get rejected before you hear them.</li>
+    <li>Every word gets a color: green is clean, orange means listen to it, red means I could not hear it.</li>
+    <li>Click a word to jump to it. Click one word, then hold Shift and click another, to select the whole range between them.</li>
+    <li>A bad word never forces a redo of the whole clip. Select it and pick a fix: <b>Give me options</b> (hear a few versions and choose), <b>Regenerate selection</b>, or <b>Regenerate with my voice</b> (you say the word once, I copy exactly how you said it).</li>
+    <li>Every take also shows a <b>match score</b>: how much the take sounds like the voice's own recording, measured with a speaker recognition model, not guessed. Around 65 to 75 percent is a normal instant clone. Above 90 means a trained Pro voice.</li>
+    <li>More takes means more safety. For anything important, set takes to 7 or more.</li>
+  </ul>
+</div>
+
+<!-- 4 INSTANT VS PRO -->
+<div class="card">
+  <h2>4 · Instant clone vs Pro clone (the honest truth about voice cloning)</h2>
+  <p>People ask: ElevenLabs clones a voice in a minute, why is my instant clone not a perfect twin? Here is the honest answer. ElevenLabs runs a giant model on datacenter computers, trained on millions of voices, and even THEIR instant clone is an approximation: their best tier trains on your audio for a while too. An instant clone anywhere carries the accent, tone and pace, not the exact person. To get the exact person, the model has to be TRAINED on that voice. That is the Pro clone, and it runs right here on your own computer.</p>
+  <table>
+    <tr><th></th><th>Instant clone</th><th>Pro clone</th></tr>
+    <tr><td>Wait</td><td>about a minute</td><td>one training, on your PC</td></tr>
+    <tr><td>Sounds like</td><td>the same kind of voice: accent, tone, pace</td><td>the person. Close to the real voice</td></tr>
+    <tr><td>Match score</td><td>usually 65 to 85</td><td>90 plus</td></tr>
+    <tr><td>Needs</td><td>20 seconds of clean audio</td><td>8 to 20 minutes of clean audio</td></tr>
+    <tr><td>Runs on</td><td>your computer, offline</td><td>your computer, offline — your graphics card if you have one</td></tr>
+  </table>
+  <ul>
+    <li>Press <b>★ Make Perfect Clone</b> next to any voice. It shows what it will train on — your NVIDIA graphics card if you have one (fast, under an hour), or your CPU if you do not (slower, a few hours). Then press the button and leave it.</li>
+    <li><b>Nothing leaves your computer.</b> No account, no sign-up, no internet. The training runs on your own machine, start to finish.</li>
+    <li>It uses your graphics card fully, so the app pauses making new audio while it trains. When it finishes, the voice switches to its trained Pro version by itself.</li>
+    <li>A gaming PC or a laptop with an NVIDIA card trains fast. A plain office PC still works, it just takes longer, so start it before a break.</li>
+    <li>This is the exact same training that built the voice this app ships with. It is not a gimmick tier. It is the real thing.</li>
+  </ul>
+</div>
+
+<!-- 5 ENHANCE AUDIO -->
+<div class="card">
+  <h2>5 · Enhance audio (clean up any recording)</h2>
+  <ul>
+    <li><b>It needs no voice model.</b> Drop a file into the Enhance audio panel and it works straight away, even while the one-time engine download is still running.</li>
+    <li><b>It measures your file first, then fixes only what is wrong with it.</b> Hiss, mains hum, low rumble, harsh S sounds, uneven levels. If your recording is already clean it says so and leaves it alone.</li>
+    <li><b>You get two versions.</b> A master at -16 LUFS, the normal loudness for spoken word, and a louder -14 LUFS one for social video. Both stay under -1 dBTP so nothing distorts.</li>
+    <li><b>It tells you what it found and what it did</b>, in plain words, and you can play before and after side by side before downloading either. The numbers live behind a small "details" fold for anyone who wants them.</li>
+    <li><b>The ✦ button in Result does the same for a finished take</b>, and once a take is enhanced the same button flips between your original and the enhanced version instantly. The person icon top right lets you make any of this automatic.</li>
+    <li>wav, mp3, m4a and video all work. Only the sound is used, and nothing leaves your computer.</li>
+  </ul>
+</div>
+
+<!-- 6 LIMITS -->
+<div class="card">
+  <h2>6 · Honest limits (read this so nothing surprises you)</h2>
+  <ul>
+    <li><b>It speaks English.</b> Other languages are not supported yet.</li>
+    <li><b>It cannot sing</b> and it cannot act emotions on command. It talks the way your recording talks.</li>
+    <li><b>An instant clone gets close, never perfect.</b> It carries the accent, tone and pace, not the exact person. That is physics, not a missing feature: the perfect version is the Pro clone in section 4.</li>
+    <li><b>Unusual names and brands</b> often miss on the first try. That is normal for every voice tool. The "Say a word my way" boxes under "Manage this voice", and Record it, fix them permanently.</li>
+    <li><b>Noise in, noise out.</b> The cleaner your recording, the cleaner every clip you ever generate with that voice. The trim editor is there so junk never gets in.</li>
+    <li><b>The accent comes from your clip.</b> The clone keeps whatever accent you gave it. It cannot switch accents on demand.</li>
+    <li><b>The word checker cannot judge accent.</b> It catches missing and garbled words very well, but it cannot tell a good "python" from a slightly off one. For those, your ear decides, and the options picker exists exactly for that.</li>
+    <li><b>Speed:</b> a sentence takes seconds on a computer with an NVIDIA graphics card, longer on a plain CPU. More takes cost more time.</li>
+    <li><b>Only clone voices you have the right to clone.</b> Your voice, or a voice whose owner gave you permission. The preset voices included with the app come from public domain recordings.</li>
+  </ul>
+</div>
+
+<!-- 7 QUICK RECIPE -->
+<div class="card">
+  <h2>7 · The 5 minute recipe for a new voice</h2>
+  <ul>
+    <li>1. Quiet room, phone at a hand's length, talk naturally for 2 to 3 minutes.</li>
+    <li>2. Add a voice, upload or record. Drag across the good parts, ✓ Use selected (or ✨ Auto), ▶ Result, Create.</li>
+    <li>3. Read the transcript I heard. Fix any wrong word and save.</li>
+    <li>4. Teach it your 5 most used names and brands: open "Manage this voice" and use "Say a word my way".</li>
+    <li>5. Generate one test paragraph with 5 takes. Listen to the best take and its match score.</li>
+    <li>6. Any stubborn word: select it, Give me options, or say it once yourself. Done for good.</li>
+  </ul>
+  <p class="sub" style="margin:6px 0 0">A few clean minutes of audio plus five taught words gives you a voice you can use for months. When you want the perfect twin, press ★ Make Perfect Clone and let it train once.</p>
+</div>
+
+</div>
+</body>
+</html>
