@@ -153,7 +153,7 @@ section{scroll-margin-top:76px}
 .offer-tag{font:800 11px/1 var(--mono);letter-spacing:.08em;background:var(--warm);color:#fff;padding:7px 11px;border-radius:99px;flex:none}
 .offer-txt{font-size:14.5px;color:var(--warm);font-weight:700}
 .offer-txt b{font-weight:800}
-.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:16px;align-items:start;margin-top:18px}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(272px,100%),1fr));gap:16px;align-items:start;margin-top:18px}
 .plan{background:var(--surf);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:24px}
 .plan-full{position:relative;border:2px solid var(--acc);box-shadow:var(--shadow-lg)}
 .plan-flag{position:absolute;top:-11px;left:24px;padding:5px 11px;border-radius:99px;background:var(--acc);color:#fff;font:700 10px/1 var(--mono);letter-spacing:.1em}
@@ -223,7 +223,7 @@ footer a:hover{color:#fff}
     </div>
 
     <div>
-      <div class="mock" id="mock" aria-label="A small demo of the VoiceClone app">
+      <div class="mock picked" id="mock" aria-label="A small demo of the VoiceClone app">
         <div class="mock-bar">
           <i class="dot"></i><i class="dot"></i><i class="dot"></i>
           <span class="mock-title">VOICECLONE · OFFLINE</span>
@@ -232,8 +232,8 @@ footer a:hover{color:#fff}
           <div>
             <div class="mock-label">VOICE</div>
             <div class="voice-chip" id="voiceChip">
-              <span class="avatar" id="voiceAvatar">M</span>
-              <span class="voice-name" id="voiceName">My voice</span>
+              <span class="avatar" id="voiceAvatar" style="background:var(--acc-tint);color:var(--acc-ink)">D</span>
+              <span class="voice-name" id="voiceName">Deep Narrator</span>
               <span class="tag-trained">✓ TRAINED</span>
               <svg class="caret-ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
               <div class="voice-menu" id="voiceMenu">
@@ -252,7 +252,7 @@ footer a:hover{color:#fff}
               Generate
             </button>
             <div class="bar"><i id="barFill"></i></div>
-            <span class="mock-time" id="mockTime">0:20</span>
+            <span class="mock-time" id="mockTime">0:16</span>
           </div>
         </div>
 
@@ -265,7 +265,7 @@ footer a:hover{color:#fff}
           <svg width="22" height="22" viewBox="0 0 24 24"><path d="M4 2l14 12-6.5.8L15 22l-3.6 1.4-3.4-7.6L4 19z" fill="#fff" stroke="#0F1B2D" stroke-width="1.6" stroke-linejoin="round"></path></svg>
         </div>
       </div>
-      <div class="quote" style="margin-top:12px">DEEP NARRATOR · TRAINED CLONE · 0:20 · straight out of the app</div>
+      <div class="quote" style="margin-top:12px">DEEP NARRATOR · TRAINED VOICE · 0:16 · straight out of the app</div>
     </div>
   </div>
 </section>
@@ -321,22 +321,11 @@ footer a:hover{color:#fff}
       </div>
     </div>
 
-    <div class="hearbar" id="hearbar">
-      <button class="chip-play" id="chipPlay" aria-label="Play the finished file, sound on">
-        <svg class="ico-play" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l12 8-12 8z"></path></svg>
-        <svg class="ico-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"></path></svg>
-      </button>
-      <div style="flex:1;min-width:0">
-        <div style="font-weight:800;font-size:15px">Hear the finished file.</div>
-        <div style="font-size:12.5px;color:var(--soft);margin-top:3px">The same clip as above — a whole paragraph, typed, in a trained clone.</div>
-      </div>
-      <span style="font:600 11px/1 var(--mono);color:var(--faint)">0:20</span>
-    </div>
   </div>
 </section>
 
 <section id="pricing" style="background:var(--surf)">
-  <div class="wrap sect">
+  <div class="wrap sect" style="max-width:960px">
     <div style="max-width:620px">
       <div class="kicker">PRICING &amp; DOWNLOAD</div>
       <h2 class="h2">Pay once. That's the whole pricing page.</h2>
@@ -360,10 +349,10 @@ footer a:hover{color:#fff}
           <div class="feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg>A few generations to check it</div>
         </div>
         <a class="btn btn-acc plan-btn" href="dl/VoiceClone-v1.2.0-windows.zip" download>
-          Download free — Windows
+          Download free
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 11l5 5 5-5M4 21h16"></path></svg>
         </a>
-        <p class="plan-meta">v1.2.0 · 51 MB · starts downloading right away</p>
+        <p class="plan-meta">Windows · v1.2.0 · 51 MB · starts right away</p>
       </div>
 
       <div class="plan plan-full">
@@ -384,11 +373,23 @@ footer a:hover{color:#fff}
         </a>
         <p class="plan-meta">Checkout handled by Gumroad.</p>
       </div>
-    </div>
 
-    <div class="cloud">
-      <span class="cloud-tag">CLOUD · COMING SOON</span>
-      <span class="cloud-txt">Cloud processing is in the works — generate without tying up your PC. <b>Everyone who owns VoiceClone before it launches gets a flat 50% off cloud.</b></span>
+      <div class="plan" style="border-style:dashed;background:var(--bg2)">
+        <div class="plan-h">
+          <div class="plan-name">Cloud</div>
+          <span class="pill" style="color:var(--brand-ink);background:var(--brand-tint)">PENDING</span>
+        </div>
+        <div class="feats">
+          <div class="feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg>Generate without tying up your PC</div>
+          <div class="feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg>Same voices, same word check</div>
+          <div class="feat"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 12l5 5L20 6"></path></svg><b>Flat 50% off for existing owners</b></div>
+        </div>
+        <span class="btn plan-btn" style="background:var(--surf);border:1px dashed var(--line2);color:var(--faint);cursor:default">
+          Pending
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l4 2"></path></svg>
+        </span>
+        <p class="plan-meta">Own VoiceClone before launch and the 50% is locked in.</p>
+      </div>
     </div>
 
     <div class="reqs">
@@ -471,8 +472,6 @@ footer a:hover{color:#fff}
   var audio = document.getElementById('clip');
   var mock = document.getElementById('mock');
   var bigPlay = document.getElementById('bigPlay');
-  var hearbar = document.getElementById('hearbar');
-  var chipPlay = document.getElementById('chipPlay');
   var barFill = document.getElementById('barFill');
   var mockTime = document.getElementById('mockTime');
   var cursor = document.getElementById('demoCursor');
@@ -486,7 +485,6 @@ footer a:hover{color:#fff}
 
   function setPlaying(on) {
     mock.classList.toggle('playing', on);
-    hearbar.classList.toggle('playing', on);
     if (on) bigPlay.classList.remove('nudge');
     bigPlay.setAttribute('aria-label', on ? 'Pause the demo clip' : 'Play the demo clip, sound on');
   }
@@ -495,7 +493,6 @@ footer a:hover{color:#fff}
     else { audio.pause(); }
   }
   bigPlay.addEventListener('click', toggle);
-  chipPlay.addEventListener('click', toggle);
   audio.addEventListener('play', function () { setPlaying(true); });
   audio.addEventListener('pause', function () { setPlaying(false); });
   audio.addEventListener('ended', function () { setPlaying(false); barFill.style.width = '0%'; mockTime.textContent = fmt(audio.duration || 20); });
