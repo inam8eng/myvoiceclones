@@ -6,29 +6,29 @@
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(../assets/fonts/jetbrains-mono-latin.woff2) format('woff2')}
 
 :root{
-  --bg:#F6F2EA; --bg2:#FBF8F1; --band:#EFE6D6;
-  --surface:#FFFFFF; --surface2:#FBF7F0;
-  --ink:#211C17; --ink2:#14100B; --soft:#6E6459; --faint:#9C9284;
-  --line:#E7DED0; --line2:#DBCFBD;
-  /* one orange, the Designesh lock, same value the app icon uses */
-  --acc:#FF6A2C; --acc-h:#FF7F49; --acc-ink:#C8481A; --acc-tint:#FFEBE0; --acc-line:#FFCDB2;
-  --ok:#2E9E63; --ok-tint:#E5F4EB; --bad:#C6473A; --bad-tint:#F9E9E6; --warn:#B4791B; --warn-tint:#FBF0DB;
-  --shadow:0 1px 2px rgba(40,28,14,.05),0 14px 34px -20px rgba(70,45,20,.26);
-  --shadow-lg:0 2px 6px rgba(40,28,14,.06),0 30px 70px -34px rgba(70,45,20,.34);
-  --glow:0 12px 28px -12px rgba(232,93,44,.5);
+  --bg:#F2F5FA; --bg2:#F8FAFD; --band:#E8EFF7;
+  --surface:#FFFFFF; --surface2:#F8FAFD;
+  --ink:#0F1B2D; --ink2:#0A1322; --soft:#586479; --faint:#8A94A6;
+  --line:#E1E7F0; --line2:#CFD8E6;
+  /* one blue, the live VoiceClone accent, same value the main site uses */
+  --acc:#0B84E3; --acc-h:#2A9BF5; --acc-ink:#0866B4; --acc-tint:#E3F3FD; --acc-line:#AFD9F6;
+  --ok:#12855A; --ok-tint:#E2F4EC; --bad:#C63B3B; --bad-tint:#FBE8E8; --warn:#8A6116; --warn-tint:#F7F0DC;
+  --shadow:0 1px 2px rgba(15,27,45,.05),0 14px 34px -20px rgba(15,40,90,.28);
+  --shadow-lg:0 2px 6px rgba(15,27,45,.06),0 30px 70px -34px rgba(15,40,90,.34);
+  --glow:0 12px 28px -12px rgba(11,132,227,.5);
   --mono:'JetBrains Mono',ui-monospace,monospace;
   --sans:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
 }
 [data-theme="dark"]{
-  --bg:#16120D; --bg2:#1B1610; --band:#211A12;
-  --surface:#221C15; --surface2:#28211A;
-  --ink:#F3ECE0; --ink2:#FBF6EC; --soft:#AC9F8E; --faint:#7C7061;
-  --line:#322A20; --line2:#40362A;
-  --acc:#FF7A40; --acc-h:#FF8F5C; --acc-ink:#FF9E6E; --acc-tint:#2B1E13; --acc-line:#4A3324;
-  --ok:#45C07D; --ok-tint:#15291D; --bad:#E4685A; --bad-tint:#2E1A16; --warn:#D69B3E; --warn-tint:#2A2112;
+  --bg:#0D1524; --bg2:#111B2C; --band:#131E31;
+  --surface:#152036; --surface2:#1A2740;
+  --ink:#E8EEF7; --ink2:#F4F8FD; --soft:#9DAAC0; --faint:#6C7A93;
+  --line:#22304A; --line2:#2E3F5E;
+  --acc:#3FA9F5; --acc-h:#5FB8F8; --acc-ink:#8FD0FF; --acc-tint:#0E2739; --acc-line:#1E4667;
+  --ok:#45C07D; --ok-tint:#12291F; --bad:#E66A6A; --bad-tint:#301616; --warn:#D6A93E; --warn-tint:#2A2112;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 16px 40px -22px rgba(0,0,0,.6);
   --shadow-lg:0 2px 8px rgba(0,0,0,.35),0 34px 80px -36px rgba(0,0,0,.7);
-  --glow:0 12px 30px -12px rgba(242,111,60,.45);
+  --glow:0 12px 30px -12px rgba(63,169,245,.4);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -59,11 +59,11 @@ button{font-family:var(--sans)}
 .theme-btn{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
 @media (max-width:720px){.nav-links{display:none}}
 
-/* logo mark: the VoiceClone app icon, an ink squircle holding the orange wave */
+/* logo mark: the live-site VoiceClone icon, a blue squircle holding the white wave */
 .mark{display:inline-flex;align-items:center;flex:0 0 auto}
-.mark .mark-box{fill:#1A2531}
-[data-theme="dark"] .mark .mark-box{fill:#0F1720}
-.mark .mark-wave{fill:#FF6A2C}
+.mark .mark-box{fill:#0B84E3}
+[data-theme="dark"] .mark .mark-box{fill:#0B84E3}
+.mark .mark-wave{fill:#FFFFFF}
 .brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
 .brand b{font-weight:800;font-size:18px;letter-spacing:-.02em}
 
