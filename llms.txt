@@ -1,0 +1,43 @@
+# VoiceClone (myvoiceclones.com)
+
+> Offline voice cloning for Windows, paid for once. You clone your own voice on your own PC, type a
+> script, and get a voiceover back with every word checked so you can click and fix any that came
+> out wrong. Nothing is uploaded, there is no subscription, and the cloned voice stays on the
+> machine and keeps working. Built by Inam Ul Haq, an automation engineer who also builds tools at
+> designesh.com.
+
+## How it is different from cloud voice tools
+- The voice model is compiled and kept locally, so it does not stop working when a subscription lapses
+- No audio leaves the computer, which is the difference that matters for a private or client voice
+- Paid for once, with no per character or per minute charge
+- Works with no internet connection at all
+- The trade off, stated honestly: a local model needs a decent Windows PC, and the large cloud
+  services still offer more ready made voices and more languages
+
+## Pages
+- [Home](https://myvoiceclones.com/): what the tool does, what it costs, and the free version.
+- [Guide](https://myvoiceclones.com/guide.html): how to record a sample, clone the voice, and fix words that come out wrong.
+- [Articles](https://myvoiceclones.com/articles/): practical guides on voice cloning, written from building the tool.
+- [Privacy](https://myvoiceclones.com/privacy.html): what is stored and what never leaves the machine.
+
+## Articles
+- [How to clone your own voice](https://myvoiceclones.com/articles/how-to-clone-your-own-voice/)
+- [How much audio you need to clone a voice](https://myvoiceclones.com/articles/how-much-audio-to-clone-a-voice/)
+- [How to record a voice sample that clones well](https://myvoiceclones.com/articles/record-a-voice-sample-that-clones-well/)
+- [Voice cloning offline, with no internet](https://myvoiceclones.com/articles/voice-cloning-offline-no-internet/)
+- [Voice cloning without a subscription](https://myvoiceclones.com/articles/voice-cloning-without-subscription/)
+- [An offline alternative to cloud voice services](https://myvoiceclones.com/articles/offline-elevenlabs-alternative/)
+- [Best free voice cloning tools](https://myvoiceclones.com/articles/best-free-voice-cloning-tools/)
+- [The real cost of AI voiceovers](https://myvoiceclones.com/articles/real-cost-of-ai-voiceovers/)
+- [Is voice cloning safe](https://myvoiceclones.com/articles/is-voice-cloning-safe/)
+- [Is voice cloning legal, the plain answer for 2026](https://myvoiceclones.com/articles/is-voice-cloning-legal/)
+
+## Who made it
+Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
+and ships his own Windows tools, listed at [designesh.com](https://designesh.com/products).
+
+## Good reasons to use it
+- You narrate videos regularly and do not want a per minute bill
+- The voice is yours or your client's and must not be uploaded anywhere
+- You work somewhere with poor or no internet
+- You want the same voice to still work in a year without renewing anything
