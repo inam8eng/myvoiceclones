@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-09-02</lastmod><priority>1.0</priority></url>
-  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-09-02</lastmod><priority>0.8</priority></url>
-  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-09-02</lastmod><priority>0.7</priority></url>
-  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-09-02</lastmod><priority>0.3</priority></url>
+  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-09-03</lastmod><priority>1.0</priority></url>
+  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-09-03</lastmod><priority>0.8</priority></url>
+  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-09-03</lastmod><priority>0.7</priority></url>
+  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-09-03</lastmod><priority>0.3</priority></url>
   <url><loc>https://myvoiceclones.com/articles/how-to-clone-your-own-voice/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/real-cost-of-ai-voiceovers/</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/is-voice-cloning-safe/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
@@ -13,5 +13,6 @@
   <url><loc>https://myvoiceclones.com/articles/offline-elevenlabs-alternative/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/voice-cloning-without-subscription/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/best-free-voice-cloning-tools/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
+  <url><loc>https://myvoiceclones.com/articles/ai-voice-for-youtube/</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/is-voice-cloning-legal/</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
 </urlset>
