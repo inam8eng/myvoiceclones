@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Train a voice clone on your own PC, no cloud involved | VoiceClone</title>
+<meta name="description" content="What training a voice clone actually means, what hardware it needs, how long it really takes on a normal graphics card, and what changes in the sound.">
+<link rel="canonical" href="https://myvoiceclones.com/articles/train-your-voice-on-your-own-pc/">
+<meta property="og:title" content="Train a voice clone on your own PC, no cloud involved">
+<meta property="og:description" content="What training a voice clone actually means, what hardware it needs, how long it really takes on a normal graphics card, and what changes in the sound.">
+<meta property="og:image" content="https://myvoiceclones.com/assets/articles/train-your-voice-on-your-own-pc.png">
+<meta property="og:url" content="https://myvoiceclones.com/articles/train-your-voice-on-your-own-pc/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../assets/favicon-512.png">
+
+<link rel="stylesheet" href="../../css/site.css">
+<script>(function(){var t=localStorage.getItem("mvc-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;})();</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Train a voice clone on your own PC, no cloud involved", "description": "What training a voice clone actually means, what hardware it needs, how long it really takes on a normal graphics card, and what changes in the sound.", "datePublished": "2026-09-04", "dateModified": "2026-09-04", "author": {"@type": "Person", "name": "Inam", "url": "https://designesh.com"}, "publisher": {"@type": "Organization", "name": "VoiceClone", "url": "https://myvoiceclones.com", "logo": {"@type": "ImageObject", "url": "https://myvoiceclones.com/assets/favicon-512.png"}}, "image": "https://myvoiceclones.com/assets/articles/train-your-voice-on-your-own-pc.png", "mainEntityOfPage": "https://myvoiceclones.com/articles/train-your-voice-on-your-own-pc/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://myvoiceclones.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://myvoiceclones.com/articles/"}, {"@type": "ListItem", "position": 3, "name": "Train a voice clone on your own PC, no cloud involved", "item": "https://myvoiceclones.com/articles/train-your-voice-on-your-own-pc/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long does it take to train a voice clone?", "acceptedAnswer": {"@type": "Answer", "text": "Under an hour on a normal NVIDIA graphics card, and about 145 minutes on a small 4 GB laptop card, measured on my own machine. VoiceClone shows an estimate for your specific GPU before starting."}}, {"@type": "Question", "name": "Can I train a voice clone without a graphics card?", "acceptedAnswer": {"@type": "Answer", "text": "Realistically no, training wants an NVIDIA GPU. Instant cloning and generation still work on CPU only machines, just slower, so you can use the app fully and add training when you have access to a card."}}, {"@type": "Question", "name": "Is my voice uploaded anywhere during training?", "acceptedAnswer": {"@type": "Answer", "text": "Not with VoiceClone. Training runs entirely on your own computer and the finished voice model is a local file you own. Cloud tools train on their servers instead, which means your voice recordings live under their terms."}}, {"@type": "Question", "name": "Is a trained clone really that much better than an instant one?", "acceptedAnswer": {"@type": "Answer", "text": "It is the single biggest quality jump available, bigger than any recording trick. My own voice went from an 80ish percent speaker match to about 96 percent, and the trained version is what narrates my published videos."}}]}</script>
+</head>
+<body>
+<header class="nav-outer"><nav class="nav">
+  <a href="../../index.html" class="brand" aria-label="VoiceClone home"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><rect class="mark-box" width="48" height="48" rx="13"/><g class="mark-wave"><rect x="7.5" y="17" width="5" height="14" rx="2.5"/><rect x="14.5" y="12" width="5" height="24" rx="2.5"/><rect x="21.5" y="9" width="5" height="30" rx="2.5"/><rect x="28.5" y="14" width="5" height="20" rx="2.5"/><rect x="35.5" y="18" width="5" height="12" rx="2.5"/></g></svg><b>VoiceClone</b></a>
+  <div class="nav-links"><a href="../../index.html#how">How it works</a><a href="../../index.html#pricing">Pricing</a><a href="../index.html">Articles</a><a href="../../index.html#faq">FAQ</a></div>
+  <a href="../../index.html#pricing" class="btn sm">Download</a>
+</nav></header>
+<article>
+  <div class="art-head">
+    <div class="crumbs"><a href="../../index.html">Home</a><span>/</span><a href="../index.html">Articles</a><span>/</span>Guides</div>
+    <h1>Train a voice clone on your own PC, no cloud involved</h1>
+    <div class="art-meta"><span class="cat-chip">Guides</span><span>By Inam</span><span>·</span><span>September 4, 2026</span></div>
+  </div>
+  <figure class="art-hero"><img src="../../assets/articles/train-your-voice-on-your-own-pc.png?v=b" width="1200" height="630" alt="Train a voice clone on your own PC, no cloud involved" loading="eager" decoding="async"></figure>
+  <div class="answer-box"><div class="lbl">The short answer</div><p>Training a voice clone means the model&#x27;s own weights are adjusted to your voice, which lifts the speaker match from roughly 80 percent to about 96 percent. With VoiceClone this runs entirely on your own NVIDIA graphics card, under an hour on a normal card and about 145 minutes on a small 4 GB laptop card, and the trained voice is a file you own.</p></div>
+  <div class="art-body">
+<p>By Inam, who built VoiceClone and narrates his own videos with it. More of my engineering write ups live at <a href="https://designesh.com">designesh.com</a>. Last updated 4 September 2026.</p>
+<p>My instant clone always sounded like a cousin of mine. Close enough that people who know me would nod, far enough that I would wince a little on every listen, because I know exactly where my voice sits and this thing sat two seats away.</p>
+<p>The evening I finally trained a proper model of my voice, I pressed the button, went for dinner, came back, generated the same test sentence, and sat there grinning at my own laptop. The cousin was gone. It was me, on a slightly different mic.</p>
+<p>That jump is what this article is about, because training is the least understood part of voice cloning and the part most tools quietly do not offer at all.</p>
+<h2>What does training a voice clone actually mean?</h2>
+<p>An instant clone never really learns you. The model listens to your reference clip at generation time and imitates it on the fly, the way a good mimic works from a voicemail. That gets you a solid resemblance in about a minute, and it also explains the ceiling: the mimic is still the same generic model underneath, doing an impression.</p>
+<p>Training is different machinery. The model's own internal weights are adjusted using your recordings, so your voice stops being an impression it performs and becomes something it knows. The result is a voice model file that exists on your disk, permanently, and loads like any other voice afterward.</p>
+<p>The engine underneath VoiceClone is GPT-SoVITS, and <a href="https://github.com/RVC-Boss/GPT-SoVITS">its own project page</a> lists these as two separate modes: zero shot from a five second sample, and few shot fine tuning from about a minute of training data. Instant cloning is the first mode. Training is the second.</p>
+<p>On my calibrated speaker match scale, my instant clones score around 80 percent against my real voice, and my trained voice scores about 96. The nine year old in my family could not tell the trained one from a real recording, and honestly, on short clips, some days neither can I.</p>
+<h2>How is a trained clone different from an instant clone?</h2>
+<p>Same app, same voice, two different machines underneath. These are the differences that actually decide which one you should reach for.</p>
+<ul><li><b>Instant clone.</b> The model imitates your reference clip at generation time. Ready in about a minute, runs on CPU or GPU, and scores around 80 percent speaker match on my scale.</li><li><b>Trained clone.</b> The model's own weights are adjusted to your voice and saved as a file. Takes under an hour on a normal NVIDIA card, needs that card, and scores about 96 percent on the same scale.</li><li><b>Where instant is genuinely better.</b> It costs you a minute instead of an evening, it works on a machine with no NVIDIA card in it at all, and for a draft read or a quick test it is the right tool, not the compromise.</li><li><b>Where training is genuinely better.</b> Word endings, the weight of pauses, the small habits. Everything that separates "sounds like him" from "that is him".</li></ul>
+<h2>What do you need before you train a voice at home?</h2>
+<p>Three things, and I will be exact because vague hardware advice wastes people's money.</p>
+<p>First, an NVIDIA graphics card. Training is the one part of this whole field that genuinely wants a GPU, because the training stack runs through CUDA, which is <a href="https://docs.pytorch.org/docs/stable/notes/cuda.html">NVIDIA's own GPU interface inside PyTorch</a>. There is no AMD or Intel shortcut around that today.</p>
+<p>The good news is how little card it needs. I trained a complete voice on the small 4 GB card inside my work laptop, nothing gaming grade, and it finished in 145 minutes. A normal desktop NVIDIA card does the same run in under an hour.</p>
+<p>Before anything starts, VoiceClone shows you which card it found and an honest time estimate for your exact machine, so you commit knowing the price in minutes. I wrote more about the hardware side in <a href="../index.html">GPU or CPU</a>.</p>
+<p>Second, clean audio of you. Three to ten minutes of natural talking is the sweet spot, and clean matters more than long, because training studies your recording far more thoroughly than instant cloning does, flaws included. My guide on <a href="../record-a-voice-sample-that-clones-well/index.html">recording a sample that clones well</a> applies double here.</p>
+<p>Third, patience for one evening. Not attention, patience. It runs alone, and after the one time setup it needs no internet at all.</p>
+<h2>What happens when you press Make it perfect?</h2>
+<p>In VoiceClone the whole thing is one button called Make it perfect, and I named it that because that is the actual promise. It takes the voice you already cloned, shows you the plan, trains on your card while you live your life, and installs the finished trained voice into your app when it is done.</p>
+<p>No account, no cloud, no upload. The training happens on your electricity, and the resulting model belongs to you the way a file belongs to you.</p>
+<p>I did not stop at testing it on my own voice. The four ready trained voices included with the license, a British one, an American one, an Indian one, and a Russian one, were all trained with this exact same pipeline, and they score between 60 and 89 percent against their source speakers. I mention this because it is easy to claim a training button works, and harder to ship four voices made by it.</p>
+<h2>What actually changes in the sound after training?</h2>
+<p>The measurable part is the speaker match number climbing from 80ish to about 96. The hearable part is more interesting.</p>
+<p>Instant clones get the broad shape of a voice but smooth over the small habits, the way certain word endings fall, the exact weight of pauses, the tiny push a person puts on some vowels. Training recovers those, and they turn out to be most of what "sounds like me" means. The synthetic sheen, that faint AI glaze <a href="../index.html">I wrote about here</a>, mostly lives in that gap too.</p>
+<p>One honest note: training amplifies the reference, in both directions. Feed it five clean minutes and you get the jump I described. Feed it a noisy phone memo and you get a high fidelity clone of a noisy phone memo.</p>
+<p>The <a href="../record-a-voice-sample-that-clones-well/index.html">quality checks</a> in the app exist exactly to stop that second outcome before it costs you an hour.</p>
+<h2>FAQ</h2>
+<p class="art-faq-q">How long does it take to train a voice clone?</p>
+<p>Under an hour on a normal NVIDIA graphics card, and about 145 minutes on a small 4 GB laptop card, measured on my own machine. VoiceClone shows an estimate for your specific GPU before starting.</p>
+<p class="art-faq-q">Can I train a voice clone without a graphics card?</p>
+<p>Realistically no, training wants an NVIDIA GPU. Instant cloning and generation still work on CPU only machines, just slower, so you can use the app fully and add training when you have access to a card.</p>
+<p class="art-faq-q">Is my voice uploaded anywhere during training?</p>
+<p>Not with VoiceClone. Training runs entirely on your own computer and the finished voice model is a local file you own. Cloud tools train on their servers instead, which means your voice recordings live under their terms.</p>
+<p class="art-faq-q">Is a trained clone really that much better than an instant one?</p>
+<p>It is the single biggest quality jump available, bigger than any recording trick. My own voice went from an 80ish percent speaker match to about 96 percent, and the trained version is what narrates my published videos.</p>
+<h2>Should you train your voice this week?</h2>
+<p>If you already have the <a href="../../index.html#pricing">free app</a>, record five clean minutes of yourself, check the quality bars are green, and start Make it perfect right before you eat. The free app includes one complete training run and 3 generations to judge it, so you hear the jump on your own voice instead of taking my word for it.</p>
+<p>After those takes, unlimited generation, retraining and exports open with the <a href="https://designesh.gumroad.com/l/voiceclone">$49 one time license</a>, and there has never been anything monthly hiding behind it. By the time your tea is done, your voice will be sitting on your disk, trained, and the cousin will be gone.</p>
+  </div>
+  <div class="cta-band">
+  <h3>Hear your own voice come back.</h3>
+  <p>The free Windows app clones and fully trains one voice, yours, on your own PC. No account, no upload, and the download starts right away.</p>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:18px;">
+    <a href="../../index.html#pricing" class="btn">Download free</a>
+    <a href="../../guide.html" class="btn ghost">Read the guide</a>
+  </div>
+</div>
+  <div class="related-wrap">
+    <div class="kicker">Keep reading</div>
+    <div class="related-grid"><a class="rel-card" href="../how-much-audio-to-clone-a-voice/index.html"><span class="cat-chip">Guides</span><b>How much audio do you really need to clone a voice?</b></a></div>
+  </div>
+</article>
+<footer><div class="wrap" style="padding:32px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+  <p style="font-size:13.5px;color:var(--soft);">Made by Inam · <a href="https://designesh.com" target="_blank" rel="noopener" style="font-weight:600;">a Designesh tool</a></p>
+  <p class="mono" style="font-size:12px;color:var(--faint);">© 2026 · you own everything you make with it</p>
+</div></footer>
+</body>
+</html>
