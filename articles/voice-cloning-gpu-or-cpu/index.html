@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do you need a GPU for voice cloning? Only for training | VoiceClone</title>
+<meta name="description" content="The honest hardware answer: cloning and generating speech works on a normal CPU, training realistically needs an NVIDIA card, and 4 GB of VRAM is enough for both.">
+<link rel="canonical" href="https://myvoiceclones.com/articles/voice-cloning-gpu-or-cpu/">
+<meta property="og:title" content="Do you need a GPU for voice cloning? Only for training">
+<meta property="og:description" content="The honest hardware answer: cloning and generating speech works on a normal CPU, training realistically needs an NVIDIA card, and 4 GB of VRAM is enough for both.">
+<meta property="og:image" content="https://myvoiceclones.com/assets/articles/voice-cloning-gpu-or-cpu.png">
+<meta property="og:url" content="https://myvoiceclones.com/articles/voice-cloning-gpu-or-cpu/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../assets/favicon-512.png">
+
+<link rel="stylesheet" href="../../css/site.css">
+<script>(function(){var t=localStorage.getItem("mvc-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;})();</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Do you need a GPU for voice cloning? Only for training", "description": "The honest hardware answer: cloning and generating speech works on a normal CPU, training realistically needs an NVIDIA card, and 4 GB of VRAM is enough for both.", "datePublished": "2026-09-08", "dateModified": "2026-09-08", "author": {"@type": "Person", "name": "Inam", "url": "https://designesh.com"}, "publisher": {"@type": "Organization", "name": "VoiceClone", "url": "https://myvoiceclones.com", "logo": {"@type": "ImageObject", "url": "https://myvoiceclones.com/assets/favicon-512.png"}}, "image": "https://myvoiceclones.com/assets/articles/voice-cloning-gpu-or-cpu.png", "mainEntityOfPage": "https://myvoiceclones.com/articles/voice-cloning-gpu-or-cpu/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://myvoiceclones.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://myvoiceclones.com/articles/"}, {"@type": "ListItem", "position": 3, "name": "Do you need a GPU for voice cloning? Only for training", "item": "https://myvoiceclones.com/articles/voice-cloning-gpu-or-cpu/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you need a GPU for voice cloning?", "acceptedAnswer": {"@type": "Answer", "text": "No for cloning and generating speech, where a normal CPU works at minutes per paragraph instead of seconds per line. Yes, realistically, for training a voice. An NVIDIA card with only 4 GB of VRAM is enough for both in VoiceClone."}}, {"@type": "Question", "name": "Can voice cloning run on a laptop?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. My own setup is a work laptop with a small 4 GB NVIDIA card, and it generates in seconds and finished a complete training run in 145 minutes. Even with no NVIDIA card at all, cloning and generation still work in the slower CPU mode."}}, {"@type": "Question", "name": "How much VRAM do I need for voice cloning?", "acceptedAnswer": {"@type": "Answer", "text": "4 GB covers everything in VoiceClone, generation and training both, and that was a deliberate choice when picking the engine. More VRAM adds comfort rather than capability here. Many raw open source voice models want considerably more, which is worth checking before you commit to one."}}, {"@type": "Question", "name": "Does voice cloning work on AMD graphics cards?", "acceptedAnswer": {"@type": "Answer", "text": "Treat an AMD card as CPU mode for now: generation works slowly and training realistically needs NVIDIA, because the training stack is built on CUDA first. Support outside NVIDIA is improving across the industry, so this answer should get better with time."}}]}</script>
+</head>
+<body>
+<header class="nav-outer"><nav class="nav">
+  <a href="../../index.html" class="brand" aria-label="VoiceClone home"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><rect class="mark-box" width="48" height="48" rx="13"/><g class="mark-wave"><rect x="7.5" y="17" width="5" height="14" rx="2.5"/><rect x="14.5" y="12" width="5" height="24" rx="2.5"/><rect x="21.5" y="9" width="5" height="30" rx="2.5"/><rect x="28.5" y="14" width="5" height="20" rx="2.5"/><rect x="35.5" y="18" width="5" height="12" rx="2.5"/></g></svg><b>VoiceClone</b></a>
+  <div class="nav-links"><a href="../../index.html#how">How it works</a><a href="../../index.html#pricing">Pricing</a><a href="../index.html">Articles</a><a href="../../index.html#faq">FAQ</a></div>
+  <a href="../../index.html#pricing" class="btn sm">Download</a>
+</nav></header>
+<article>
+  <div class="art-head">
+    <div class="crumbs"><a href="../../index.html">Home</a><span>/</span><a href="../index.html">Articles</a><span>/</span>Guides</div>
+    <h1>Do you need a GPU for voice cloning? Only for training</h1>
+    <div class="art-meta"><span class="cat-chip">Guides</span><span>By Inam</span><span>·</span><span>September 8, 2026</span></div>
+  </div>
+  <figure class="art-hero"><img src="../../assets/articles/voice-cloning-gpu-or-cpu.png?v=b" width="1200" height="630" alt="Do you need a GPU for voice cloning? Only for training" loading="eager" decoding="async"></figure>
+  <div class="answer-box"><div class="lbl">The short answer</div><p>You do not need a GPU to clone a voice or to generate speech: both work on a normal CPU, at minutes per paragraph instead of seconds per line. Training a voice, where the model&#x27;s own weights adjust to you, realistically needs an NVIDIA card, and 4 GB of VRAM is enough for it. On a small 4 GB laptop card a full training run took 145 minutes.</p></div>
+  <div class="art-body">
+<p>By Inam, who built VoiceClone and narrates his own videos with it. More of my engineering write ups live at <a href="https://designesh.com">designesh.com</a>. Last updated 8 September 2026.</p>
+<p>You want to hear your own voice cloned, you open a page about some voice tool, and somewhere in the requirements sits the word GPU. If your PC has no graphics card, or has one whose name you have never had a reason to learn, the honest question in your head is whether this whole thing is even for people like you.</p>
+<p>So here is the answer before anything else. <b>If you just want to clone your voice and make voiceovers with it, you do NOT need a graphics card. A normal PC does it, only slower. If you want to train the voice so it truly sounds like you, then yes, you need an NVIDIA card, and a small 4 GB one is enough.</b></p>
+<p>The confusion happens because two different jobs get talked about as one. Cloning your voice and generating speech is the first job, training is the second, and only the second one is fussy about hardware.</p>
+<p>The other thing worth saying early: my own tool was built and trained on a work laptop with a 4 GB NVIDIA card in it, the kind nobody brags about. Every hardware article about AI seems to come from someone with a gaming rig glowing under the desk, and people walk away believing this field belongs to that world.</p>
+<h2>What does a graphics card actually change?</h2>
+<p>A voice model is a huge pile of multiplication. A graphics card, the GPU, happens to be a machine built for doing thousands of multiplications at the same time, which is why AI work moved onto graphics cards in the first place. Your main processor, the CPU, can do the same sums perfectly correctly, it just does far fewer of them at once.</p>
+<p>So the card does not change whether the model runs, and it does not change how good your voice sounds. It changes the waiting, and nothing else.</p>
+<p>That is the sentence I wish someone had told me early, because it takes hardware out of the quality conversation completely. A clone made on a plain office PC and the same clone made on a fast card are the same clone.</p>
+<h2>How slow is voice cloning without a GPU?</h2>
+<p>On my NVIDIA card, generating one line of speech takes seconds, and narrating a whole video is a tea break. On a CPU only machine the same engine works, correctly and completely, but a paragraph takes minutes, so a long script becomes a start it and go do something else job.</p>
+<p>Whether that is acceptable depends entirely on what you are doing. Hearing your clone for the first time, testing quality, making short clips for a reel, all completely fine on CPU. Narrating a ten minute video every single day, you will want the card, and you will want it within about a week.</p>
+<p>VoiceClone tells you which mode it found before you generate anything, because I hate tools that let you discover the slow way that you were in the slow lane the whole time.</p>
+<h2>Why does training need an NVIDIA card when generating does not?</h2>
+<p>Training is where the model's own internal weights are adjusted to your voice, instead of the model imitating a clip you handed it. That is a far heavier piece of computing than generating a line, and the software that does it talks to the card through CUDA, which is NVIDIA's own programming layer for its GPUs. PyTorch, the framework almost all of this runs on, documents that path in its <a href="https://docs.pytorch.org/docs/stable/notes/cuda.html">CUDA notes</a>, and there is no AMD or Intel shortcut around it today.</p>
+<p>This is the one hardware requirement I cannot soften for you. What I could do was keep it small.</p>
+<p>The engine inside VoiceClone is GPT-SoVITS, chosen partly because 4 GB of VRAM runs everything, generation and full training both. Its <a href="https://github.com/RVC-Boss/GPT-SoVITS">project page</a> describes the two modes plainly: zero shot from a few seconds of reference audio, and fine tuning on about a minute of training data. Plenty of the open source voice world assumes 8, 12 or 16 GB, and those models have their reasons, but runs on the card people already own was worth more to me than any benchmark.</p>
+<h2>How much VRAM do you actually need?</h2>
+<p>VRAM is the memory that sits on the graphics card itself, separate from your normal PC memory, and it is the entry ticket: it decides whether a model can load at all. The speed tier of the card only decides your patience level after that.</p>
+<p>If you have any NVIDIA card from the last several years with 4 GB of VRAM or more, you are done, and you can skip the buying advice below. My laptop's little 4 GB card generates in seconds and finished a complete training run in 145 minutes. A normal desktop NVIDIA card does that same run in under an hour.</p>
+<p>If you are actually buying something, a used NVIDIA card with 6 or 8 GB is the honest sweet spot for voice work: cheap, everywhere, and already more than this needs. Buying a 16 GB card only for voice cloning is paying for headroom no engine of this kind will ask for, so buy that if you also want image AI or games, not for me.</p>
+<h2>What about AMD, Intel, or no card at all?</h2>
+<p>The uncomfortable truth of AI tooling in 2026 is that it speaks NVIDIA's language first and everything else second. AMD and Intel cards are improving quickly in general AI support, but for voice cloning specifically, treat a non NVIDIA card as a fast CPU: generation works through the slow path, training is out of reach. I would love that sentence to age badly.</p>
+<p>No dedicated card at all, a normal office machine, still runs the whole app in CPU mode. It asks for patience instead of hardware, which for a lot of people is the cheaper thing to give.</p>
+<p>The one machine that genuinely struggles is a very old PC below 64 bit Windows 10, and at that point borrowing a friend's newer machine is a better first taste than buying anything.</p>
+<h2>What does each setup actually give you?</h2>
+<p>Same app, same voice quality, three different waiting times. This is the comparison I would give a friend on the phone.</p>
+<ul><li><b>NVIDIA card, 4 GB or more.</b> Generation in seconds per line, and full training available: under an hour on a normal desktop card, about 145 minutes on a small laptop card. Everything the tool can do is open to you.</li><li><b>CPU only, no dedicated card.</b> Cloning and generation both work, at minutes per paragraph instead of seconds per line. Training is not realistic. Fine for short clips and for hearing your own clone properly.</li><li><b>AMD or Intel graphics.</b> In practice the same as CPU only for voice work today, because the training stack is built on CUDA. Generation yes, training no.</li><li><b>Where CPU is genuinely the right choice.</b> If you narrate occasionally and value the silence of a fanless office machine, a card buys you time you were not going to spend anyway.</li></ul>
+<p>The honest summary is that hardware decides your speed and whether training is on the table. It never decides how much the clone sounds like you. That is decided by your recording, and I wrote a <a href="../record-a-voice-sample-that-clones-well/index.html">separate guide</a> about getting that part right.</p>
+<h2>FAQ</h2>
+<p class="art-faq-q">Do you need a GPU for voice cloning?</p>
+<p>No for cloning and generating speech, where a normal CPU works at minutes per paragraph instead of seconds per line. Yes, realistically, for training a voice. An NVIDIA card with only 4 GB of VRAM is enough for both in VoiceClone.</p>
+<p class="art-faq-q">Can voice cloning run on a laptop?</p>
+<p>Yes. My own setup is a work laptop with a small 4 GB NVIDIA card, and it generates in seconds and finished a complete training run in 145 minutes. Even with no NVIDIA card at all, cloning and generation still work in the slower CPU mode.</p>
+<p class="art-faq-q">How much VRAM do I need for voice cloning?</p>
+<p>4 GB covers everything in VoiceClone, generation and training both, and that was a deliberate choice when picking the engine. More VRAM adds comfort rather than capability here. Many raw open source voice models want considerably more, which is worth checking before you commit to one.</p>
+<p class="art-faq-q">Does voice cloning work on AMD graphics cards?</p>
+<p>Treat an AMD card as CPU mode for now: generation works slowly and training realistically needs NVIDIA, because the training stack is built on CUDA first. Support outside NVIDIA is improving across the industry, so this answer should get better with time.</p>
+<h2>How do you check what is in your PC before buying anything?</h2>
+<ol><li>Press the Windows key, type dxdiag, and press enter.</li><li>Open the Display tab and read the name at the top. That is your card, and if it says NVIDIA, its VRAM is listed on the same tab.</li><li>If you want to know whether that exact model supports CUDA, NVIDIA publishes the full list on its <a href="https://developer.nvidia.com/cuda-gpus">CUDA GPUs page</a>.</li></ol>
+<p>Then get the <a href="../../index.html#pricing">free app</a>, which clones and fully trains one voice, yours, and gives you 3 generations to check it, and look at the mode line it shows you. If it says GPU, you already own everything this field asks for. If it says CPU, generate one short clip, time it honestly against your own patience, and decide about a used 6 GB card with a real number in your hand instead of a spec sheet's opinion.</p>
+  </div>
+  <div class="cta-band">
+  <h3>Hear your own voice come back.</h3>
+  <p>The free Windows app clones and fully trains one voice, yours, on your own PC. No account, no upload, and the download starts right away.</p>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:18px;">
+    <a href="../../index.html#pricing" class="btn">Download free</a>
+    <a href="../../guide.html" class="btn ghost">Read the guide</a>
+  </div>
+</div>
+  <div class="related-wrap">
+    <div class="kicker">Keep reading</div>
+    <div class="related-grid"><a class="rel-card" href="../train-your-voice-on-your-own-pc/index.html"><span class="cat-chip">Guides</span><b>Train a voice clone on your own PC, no cloud involved</b></a><a class="rel-card" href="../voice-cloning-offline-no-internet/index.html"><span class="cat-chip">Trust</span><b>Offline voice cloning: why I built a cloner with no server at all</b></a><a class="rel-card" href="../how-to-clone-your-own-voice/index.html"><span class="cat-chip">Guides</span><b>How to clone your own voice on your own PC</b></a></div>
+  </div>
+</article>
+<footer><div class="wrap" style="padding:32px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+  <p style="font-size:13.5px;color:var(--soft);">Made by Inam · <a href="https://designesh.com" target="_blank" rel="noopener" style="font-weight:600;">a Designesh tool</a></p>
+  <p class="mono" style="font-size:12px;color:var(--faint);">© 2026 · you own everything you make with it</p>
+</div></footer>
+</body>
+</html>
