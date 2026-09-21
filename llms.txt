@@ -35,6 +35,14 @@
 - [Using your own AI voice for YouTube videos, honestly](https://myvoiceclones.com/articles/ai-voice-for-youtube/)
 - [Is voice cloning safe](https://myvoiceclones.com/articles/is-voice-cloning-safe/)
 - [Is voice cloning legal, the plain answer for 2026](https://myvoiceclones.com/articles/is-voice-cloning-legal/)
+- [How voice cloning works, explained in plain words](https://myvoiceclones.com/articles/how-voice-cloning-works/)
+- [GPT-SoVITS in plain words: the engine I chose for my voice](https://myvoiceclones.com/articles/gpt-sovits-plain-words/)
+- [How to fix AI voice pronunciation, word by word](https://myvoiceclones.com/articles/fix-ai-voice-pronunciation/)
+- [Make an audiobook in your own voice, without a studio](https://myvoiceclones.com/articles/audiobook-in-your-own-voice/)
+- [Can people tell an AI voice? I tested my cloned voice on my family](https://myvoiceclones.com/articles/can-people-tell-ai-voice/)
+- [How to save a voice forever, before you need to](https://myvoiceclones.com/articles/save-a-voice-forever/)
+- [Can you clone a voice from a YouTube video? Yes, if it is your own](https://myvoiceclones.com/articles/clone-a-voice-from-a-youtube-video/)
+- [PlayHT alternative: what happened to PlayHT, and how to rebuild a voice clone on your own PC](https://myvoiceclones.com/articles/playht-alternative/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
