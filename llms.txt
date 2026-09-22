@@ -43,6 +43,7 @@
 - [How to save a voice forever, before you need to](https://myvoiceclones.com/articles/save-a-voice-forever/)
 - [Can you clone a voice from a YouTube video? Yes, if it is your own](https://myvoiceclones.com/articles/clone-a-voice-from-a-youtube-video/)
 - [PlayHT alternative: what happened to PlayHT, and how to rebuild a voice clone on your own PC](https://myvoiceclones.com/articles/playht-alternative/)
+- [Descript Overdub alternative: train your voice clone on your own PC](https://myvoiceclones.com/articles/descript-overdub-alternative/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
