@@ -44,6 +44,7 @@
 - [Can you clone a voice from a YouTube video? Yes, if it is your own](https://myvoiceclones.com/articles/clone-a-voice-from-a-youtube-video/)
 - [PlayHT alternative: what happened to PlayHT, and how to rebuild a voice clone on your own PC](https://myvoiceclones.com/articles/playht-alternative/)
 - [Descript Overdub alternative: train your voice clone on your own PC](https://myvoiceclones.com/articles/descript-overdub-alternative/)
+- [Can you detect a cloned voice? What detectors catch, and why people now doubt real audio](https://myvoiceclones.com/articles/detect-a-cloned-voice/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
