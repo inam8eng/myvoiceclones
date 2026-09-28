@@ -45,6 +45,9 @@
 - [PlayHT alternative: what happened to PlayHT, and how to rebuild a voice clone on your own PC](https://myvoiceclones.com/articles/playht-alternative/)
 - [Descript Overdub alternative: train your voice clone on your own PC](https://myvoiceclones.com/articles/descript-overdub-alternative/)
 - [Can you detect a cloned voice? What detectors catch, and why people now doubt real audio](https://myvoiceclones.com/articles/detect-a-cloned-voice/)
+- [AI voice cloning laws in 2026: what changed this year, and what it means for your own voice](https://myvoiceclones.com/articles/voice-cloning-laws-2026/)
+- [RVC vs GPT-SoVITS: voice changer or text to speech, which one do you need?](https://myvoiceclones.com/articles/rvc-vs-gpt-sovits/)
+- [Coqui XTTS alternative: Coqui shut down, so which voice cloning can you use commercially?](https://myvoiceclones.com/articles/coqui-xtts-alternative/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
