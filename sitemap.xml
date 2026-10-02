@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-09-30</lastmod><priority>1.0</priority></url>
-  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-09-30</lastmod><priority>0.8</priority></url>
-  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-09-30</lastmod><priority>0.7</priority></url>
-  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-09-30</lastmod><priority>0.3</priority></url>
+  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-10-02</lastmod><priority>1.0</priority></url>
+  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-10-02</lastmod><priority>0.8</priority></url>
+  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-10-02</lastmod><priority>0.7</priority></url>
+  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-10-02</lastmod><priority>0.3</priority></url>
   <url><loc>https://myvoiceclones.com/articles/how-to-clone-your-own-voice/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/real-cost-of-ai-voiceovers/</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/is-voice-cloning-safe/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
@@ -33,4 +33,5 @@
   <url><loc>https://myvoiceclones.com/articles/coqui-xtts-alternative/</loc><lastmod>2026-09-28</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/coqui-xtts-alternative-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/coqui-xtts-alternative-monetized.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/coqui-xtts-alternative-own-pc.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/murf-ai-alternative/</loc><lastmod>2026-09-29</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/murf-ai-alternative-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/murf-ai-alternative-sales-call.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/murf-ai-alternative-own-pc.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/speechify-voice-cloning-alternative/</loc><lastmod>2026-09-30</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/speechify-voice-cloning-alternative-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/speechify-voice-cloning-alternative-credits.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/speechify-voice-cloning-alternative-own-pc.jpg</image:loc></image:image></url>
+  <url><loc>https://myvoiceclones.com/articles/instant-vs-professional-voice-cloning/</loc><lastmod>2026-10-02</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/instant-vs-professional-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/instant-vs-professional-voice-cloning-short-sample.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/instant-vs-professional-voice-cloning-training.jpg</image:loc></image:image></url>
 </urlset>
