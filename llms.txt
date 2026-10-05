@@ -48,6 +48,10 @@
 - [AI voice cloning laws in 2026: what changed this year, and what it means for your own voice](https://myvoiceclones.com/articles/voice-cloning-laws-2026/)
 - [RVC vs GPT-SoVITS: voice changer or text to speech, which one do you need?](https://myvoiceclones.com/articles/rvc-vs-gpt-sovits/)
 - [Coqui XTTS alternative: Coqui shut down, so which voice cloning can you use commercially?](https://myvoiceclones.com/articles/coqui-xtts-alternative/)
+- [Murf AI alternative for voice cloning: Murf only clones your voice on Enterprise](https://myvoiceclones.com/articles/murf-ai-alternative/)
+- [Speechify voice cloning: it is in Speechify Studio, not the reader app, and every second costs a credit](https://myvoiceclones.com/articles/speechify-voice-cloning-alternative/)
+- [Instant vs professional voice cloning: what the difference really is, and which one you need](https://myvoiceclones.com/articles/instant-vs-professional-voice-cloning/)
+- [ElevenLabs download for PC: there is no Windows app, so here is what you can actually install](https://myvoiceclones.com/articles/elevenlabs-download-for-pc/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
