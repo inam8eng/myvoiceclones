@@ -55,6 +55,9 @@
 - [How to install GPT-SoVITS on Windows: which file to download, the steps, and where people get stuck](https://myvoiceclones.com/articles/install-gpt-sovits-windows/)
 - [Real-Time Voice Cloning: what the famous GitHub project really does, and what to use in 2026](https://myvoiceclones.com/articles/real-time-voice-cloning/)
 - [Chatterbox TTS: the free voice cloner from Resemble AI, its hidden watermark, and how it compares to GPT-SoVITS](https://myvoiceclones.com/articles/chatterbox-tts-voice-cloning/)
+- [F5-TTS voice cloning: free to run, but the official model is not for commercial use](https://myvoiceclones.com/articles/f5-tts-voice-cloning/)
+- [Kokoro TTS voice cloning: can Kokoro clone your voice? No, and what to use instead](https://myvoiceclones.com/articles/kokoro-tts-voice-cloning/)
+- [Fish Audio alternative for voice cloning: the free Fish Speech model needs a 24 GB graphics card](https://myvoiceclones.com/articles/fish-audio-alternative/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
