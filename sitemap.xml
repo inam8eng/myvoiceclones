@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-10-14</lastmod><priority>1.0</priority></url>
-  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-10-14</lastmod><priority>0.8</priority></url>
-  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-10-14</lastmod><priority>0.7</priority></url>
-  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-10-14</lastmod><priority>0.3</priority></url>
+  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-10-19</lastmod><priority>1.0</priority></url>
+  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-10-19</lastmod><priority>0.8</priority></url>
+  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-10-19</lastmod><priority>0.7</priority></url>
+  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-10-19</lastmod><priority>0.3</priority></url>
   <url><loc>https://myvoiceclones.com/articles/how-to-clone-your-own-voice/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/real-cost-of-ai-voiceovers/</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/is-voice-cloning-safe/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
@@ -39,5 +39,6 @@
   <url><loc>https://myvoiceclones.com/articles/real-time-voice-cloning/</loc><lastmod>2026-10-09</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/real-time-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/real-time-voice-cloning-typed-text.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/real-time-voice-cloning-live-mic.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/chatterbox-tts-voice-cloning/</loc><lastmod>2026-10-12</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/chatterbox-tts-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/chatterbox-tts-voice-cloning-reference-clip.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/chatterbox-tts-voice-cloning-windows-install.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/f5-tts-voice-cloning/</loc><lastmod>2026-10-13</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/f5-tts-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/f5-tts-voice-cloning-reference-clip.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/f5-tts-voice-cloning-commercial-use.jpg</image:loc></image:image></url>
-  <url><loc>https://myvoiceclones.com/articles/kokoro-tts-voice-cloning/</loc><lastmod>2026-10-14</lastmod><priority>0.6</priority></url>
+  <url><loc>https://myvoiceclones.com/articles/kokoro-tts-voice-cloning/</loc><lastmod>2026-10-14</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/kokoro-tts-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/kokoro-tts-voice-cloning-own-recording.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/kokoro-tts-voice-cloning-long-search.jpg</image:loc></image:image></url>
+  <url><loc>https://myvoiceclones.com/articles/fish-audio-alternative/</loc><lastmod>2026-10-19</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/fish-audio-alternative-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/fish-audio-alternative-gpu-memory.jpg</image:loc></image:image></url>
 </urlset>
