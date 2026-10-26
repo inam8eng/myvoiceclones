@@ -58,6 +58,9 @@
 - [F5-TTS voice cloning: free to run, but the official model is not for commercial use](https://myvoiceclones.com/articles/f5-tts-voice-cloning/)
 - [Kokoro TTS voice cloning: can Kokoro clone your voice? No, and what to use instead](https://myvoiceclones.com/articles/kokoro-tts-voice-cloning/)
 - [Fish Audio alternative for voice cloning: the free Fish Speech model needs a 24 GB graphics card](https://myvoiceclones.com/articles/fish-audio-alternative/)
+- [OpenVoice voice cloning: free under MIT, but it copies only the tone of your voice, not your accent](https://myvoiceclones.com/articles/openvoice-voice-cloning/)
+- [CapCut voice clone: free and quick, but read what its terms let CapCut do with your voice](https://myvoiceclones.com/articles/capcut-voice-clone/)
+- [Resemble AI alternative: Resemble stopped selling voice cloning in 2026, so where do you clone your voice now](https://myvoiceclones.com/articles/resemble-ai-alternative/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
