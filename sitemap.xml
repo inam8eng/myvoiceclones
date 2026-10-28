@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-10-26</lastmod><priority>1.0</priority></url>
-  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-10-26</lastmod><priority>0.8</priority></url>
-  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-10-26</lastmod><priority>0.7</priority></url>
-  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-10-26</lastmod><priority>0.3</priority></url>
+  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-10-28</lastmod><priority>1.0</priority></url>
+  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-10-28</lastmod><priority>0.8</priority></url>
+  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-10-28</lastmod><priority>0.7</priority></url>
+  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-10-28</lastmod><priority>0.3</priority></url>
   <url><loc>https://myvoiceclones.com/articles/how-to-clone-your-own-voice/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/real-cost-of-ai-voiceovers/</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/is-voice-cloning-safe/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
@@ -44,4 +44,5 @@
   <url><loc>https://myvoiceclones.com/articles/openvoice-voice-cloning/</loc><lastmod>2026-10-20</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/openvoice-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/openvoice-voice-cloning-listening-test.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/openvoice-voice-cloning-setup-desk.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/capcut-voice-clone/</loc><lastmod>2026-10-21</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/capcut-voice-clone-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/capcut-voice-clone-terms.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/capcut-voice-clone-local.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/resemble-ai-alternative/</loc><lastmod>2026-10-26</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/resemble-ai-alternative-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/resemble-ai-alternative-keep-recordings.jpg</image:loc></image:image></url>
+  <url><loc>https://myvoiceclones.com/articles/indextts-voice-cloning/</loc><lastmod>2026-10-28</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/indextts-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/indextts-voice-cloning-licence.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/indextts-voice-cloning-nvidia-pc.jpg</image:loc></image:image></url>
 </urlset>
