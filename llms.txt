@@ -61,6 +61,9 @@
 - [OpenVoice voice cloning: free under MIT, but it copies only the tone of your voice, not your accent](https://myvoiceclones.com/articles/openvoice-voice-cloning/)
 - [CapCut voice clone: free and quick, but read what its terms let CapCut do with your voice](https://myvoiceclones.com/articles/capcut-voice-clone/)
 - [Resemble AI alternative: Resemble stopped selling voice cloning in 2026, so where do you clone your voice now](https://myvoiceclones.com/articles/resemble-ai-alternative/)
+- [IndexTTS2 voice cloning: free and full of emotion, but read the bilibili licence before you sell with it](https://myvoiceclones.com/articles/indextts-voice-cloning/)
+- [VibeVoice voice cloning: what Microsoft took down, and what you can still use in 2026](https://myvoiceclones.com/articles/vibevoice-voice-cloning/)
+- [Clone your voice on iPhone with Personal Voice: free and private, but it cannot make voiceovers](https://myvoiceclones.com/articles/iphone-personal-voice/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
