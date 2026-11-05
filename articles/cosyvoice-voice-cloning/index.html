@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CosyVoice Voice Cloning: Free for Commercial Use? Yes</title>
+<meta name="description" content="CosyVoice clones a voice from a short clip, and both its code and its model files are Apache 2.0, so paid work is allowed. What it does, and the Windows catch.">
+<link rel="canonical" href="https://myvoiceclones.com/articles/cosyvoice-voice-cloning/">
+<meta property="og:title" content="CosyVoice Voice Cloning: Free for Commercial Use? Yes">
+<meta property="og:description" content="CosyVoice clones a voice from a short clip, and both its code and its model files are Apache 2.0, so paid work is allowed. What it does, and the Windows catch.">
+<meta property="og:image" content="https://myvoiceclones.com/assets/articles/cosyvoice-voice-cloning.png">
+<meta property="og:url" content="https://myvoiceclones.com/articles/cosyvoice-voice-cloning/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../assets/favicon-512.png">
+
+<link rel="stylesheet" href="../../css/site.css">
+<script>(function(){var t=localStorage.getItem("mvc-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;})();</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "CosyVoice voice cloning: free, open for paid work, but not built for Windows", "description": "CosyVoice clones a voice from a short clip, and both its code and its model files are Apache 2.0, so paid work is allowed. What it does, and the Windows catch.", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Inam", "url": "https://designesh.com"}, "publisher": {"@type": "Organization", "name": "VoiceClone", "url": "https://myvoiceclones.com", "logo": {"@type": "ImageObject", "url": "https://myvoiceclones.com/assets/favicon-512.png"}, "sameAs": ["https://designesh.com", "https://designesh.gumroad.com", "https://github.com/inam8eng/voiceclone-releases"]}, "image": "https://myvoiceclones.com/assets/articles/cosyvoice-voice-cloning.png", "mainEntityOfPage": "https://myvoiceclones.com/articles/cosyvoice-voice-cloning/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://myvoiceclones.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://myvoiceclones.com/articles/"}, {"@type": "ListItem", "position": 3, "name": "CosyVoice voice cloning: free, open for paid work, but not built for Windows", "item": "https://myvoiceclones.com/articles/cosyvoice-voice-cloning/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is CosyVoice free for commercial use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, by its licence. The code on GitHub and the model files on Hugging Face are all Apache 2.0, which allows paid work, unlike Spark-TTS and F5-TTS whose model files are non commercial."}}, {"@type": "Question", "name": "What languages does CosyVoice support?", "acceptedAnswer": {"@type": "Answer", "text": "Fun-CosyVoice3 covers 9 languages: Chinese, English, Japanese, Korean, German, Spanish, French, Italian and Russian. It also handles more than 18 Chinese dialects and can clone a voice across languages."}}, {"@type": "Question", "name": "Does CosyVoice work on Windows?", "acceptedAnswer": {"@type": "Answer", "text": "There are no official Windows steps, because the README is written for Linux. The requirements file swaps a few Linux only packages for plain ones on Windows, so it can be installed, but expect some fixing along the way."}}, {"@type": "Question", "name": "Does CosyVoice need a transcript of my clip?", "acceptedAnswer": {"@type": "Answer", "text": "The standard cloning mode needs the clip and the exact words spoken in it. For version 3, the official example puts a short fixed prompt in front of those words, so copy the format from example.py."}}]}</script>
+</head>
+<body>
+<header class="nav-outer"><nav class="nav">
+  <a href="../../index.html" class="brand" aria-label="VoiceClone home"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><rect class="mark-box" width="48" height="48" rx="13"/><g class="mark-wave"><rect x="7.5" y="17" width="5" height="14" rx="2.5"/><rect x="14.5" y="12" width="5" height="24" rx="2.5"/><rect x="21.5" y="9" width="5" height="30" rx="2.5"/><rect x="28.5" y="14" width="5" height="20" rx="2.5"/><rect x="35.5" y="18" width="5" height="12" rx="2.5"/></g></svg><b>VoiceClone</b></a>
+  <div class="nav-links"><a href="../../index.html#how">How it works</a><a href="../../index.html#pricing">Pricing</a><a href="../index.html">Articles</a><a href="../../index.html#faq">FAQ</a></div>
+  <a href="../../index.html#pricing" class="btn sm">Download</a>
+</nav></header>
+<article>
+  <div class="art-head">
+    <div class="crumbs"><a href="../../index.html">Home</a><span>/</span><a href="../index.html">Articles</a><span>/</span>Tech</div>
+    <h1>CosyVoice voice cloning: free, open for paid work, but not built for Windows</h1>
+    <div class="art-meta"><span class="cat-chip">Tech</span><span>By Inam</span><span>·</span><span>November 5, 2026</span></div>
+  </div>
+  <figure class="art-hero"><img src="../../assets/articles/cosyvoice-voice-cloning.png?v=b" width="1200" height="630" alt="CosyVoice voice cloning: free, open for paid work, but not built for Windows" loading="eager" decoding="async"></figure>
+  <div class="answer-box"><div class="lbl">The short answer</div><p>CosyVoice is a free text to speech model from Alibaba&#x27;s FunAudioLLM team, and it copies a voice from a short recording and its transcript. Unlike Spark-TTS and F5-TTS, both the code and the model files use the Apache 2.0 licence, so you are allowed to use the voice for paid work. The newest version is Fun-CosyVoice3-0.5B, it speaks 9 languages including English, and its install steps are written for Linux, not Windows.</p></div>
+  <div class="art-body">
+<div class="art-table"><table><thead><tr><th></th><th>Fun-CosyVoice3-0.5B</th><th>GPT-SoVITS</th><th>VoiceClone</th></tr></thead><tbody><tr><td>How it copies a voice</td><td>One short recording plus the words spoken in it</td><td>A 5 second sample, or a fine tune on about 1 minute</td><td>A trained model built from 1 to 3 minutes of you</td></tr><tr><td>Licence</td><td>Apache 2.0 for the code and the model</td><td>MIT</td><td>Free tier, then $49 once</td></tr><tr><td>Paid work allowed?</td><td>Yes, by the licence</td><td>Yes, by the licence</td><td>Yes, your own voice</td></tr><tr><td>Windows</td><td>Not official, Linux steps only</td><td>Ready made Windows package</td><td>Windows 10 and 11 app</td></tr><tr><td>Languages</td><td>9, including English and Chinese</td><td>English, Japanese, Korean, Cantonese, Chinese</td><td>English</td></tr></tbody></table></div>
+<p>Written by Inam. VoiceClone in the right hand column is my own app, so weigh what it says with that in mind. You can see my other engineering work on <a href="https://designesh.com">designesh.com</a>. Last updated 5 November 2026.</p>
+<p>You found CosyVoice because its demos sound natural and it costs nothing. The two questions that matter before you spend an evening on it are simple. Can you sell what you make with it, and will it run on your Windows PC?</p>
+<p><b>Yes, you can use CosyVoice for paid work, because the code and the model files are both Apache 2.0.</b> That makes it different from Spark-TTS and F5-TTS, where the code is open but the model you download is non commercial. The catch is on the other side: the install steps are written for Linux, and Windows takes extra work.</p>
+<h2>What is CosyVoice?</h2>
+<p>CosyVoice is a text to speech model, so you type words and it reads them aloud in a voice. It comes from a speech team at Alibaba that publishes as FunAudioLLM, and there have been three versions. The first, CosyVoice-300M, came out in July 2024. CosyVoice2-0.5B followed in December 2024, and Fun-CosyVoice3-0.5B arrived in December 2025.</p>
+<p>The 0.5B in the name means about half a billion parameters, which are the numbers a model learns during training. That is small enough to run on a home graphics card. The <a href="https://github.com/FunAudioLLM/CosyVoice">README on GitHub</a> says the third version covers 9 languages: Chinese, English, Japanese, Korean, German, Spanish, French, Italian and Russian, plus more than 18 Chinese dialects.</p>
+<h2>Can CosyVoice clone your voice?</h2>
+<p>Yes. CosyVoice does zero shot cloning, which means it copies a voice from one recording without training on it first. You give it a short audio clip of the speaker and the exact words spoken in that clip, and it reads new text in the same voice.</p>
+<p>There is one detail that trips people up with version 3. In the official example, the transcript of your clip does not go in alone. It starts with the line You are a helpful assistant. followed by a marker written as endofprompt inside angle brackets and bars, and only then your words. If you leave that prefix out, the results can come out wrong, so copy the format from example.py in the repository.</p>
+<p>The team does not give a fixed clip length. A clean 10 to 20 second recording in a quiet room is a sensible place to start for any instant cloning model. There is also a cross lingual mode that takes only the clip, with no transcript, and reads your text in another language in that voice.</p>
+<h2>Can you use CosyVoice for commercial work?</h2>
+<p>This is where CosyVoice stands out. The <a href="https://github.com/FunAudioLLM/CosyVoice">GitHub repository</a> uses Apache 2.0. The model files on Hugging Face carry the same licence: the <a href="https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512">Fun-CosyVoice3-0.5B model card</a>, the <a href="https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B">CosyVoice2-0.5B card</a> and the CosyVoice-300M card all list apache-2.0.</p>
+<p><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> lets you use, change and sell work made with the software, as long as you keep the licence notice when you pass the software itself on. Compare that with <a href="../spark-tts-voice-cloning/index.html">Spark-TTS</a> and <a href="../f5-tts-voice-cloning/index.html">F5-TTS</a>, where the model files are non commercial even though the code is open.</p>
+<p>There is one line worth knowing about. The bottom of the README has a disclaimer saying its content is for academic purposes and that some examples come from the internet. That sentence reads as being about the demo samples, not a change to the licence. <b>The licence allows paid work, but you still need the speaker's consent, and that means your own voice or someone who has clearly said yes.</b> I am not a lawyer, so ask one if real money is involved.</p>
+<h2>Can you run CosyVoice on Windows?</h2>
+<p>Not officially. The install steps in the README use Conda with Python 3.10, and the commands they show for system packages are for Ubuntu and CentOS, which are Linux. There is no Windows guide in the README.</p>
+<p>The <a href="https://github.com/FunAudioLLM/CosyVoice/blob/main/requirements.txt">requirements file</a> shows what changes on Windows. DeepSpeed, the GPU build of ONNX Runtime and TensorRT are marked Linux only, and Windows gets the plain ONNX Runtime instead. The optional text cleanup package, ttsfrd, ships as a Linux only file too. The README says that package is not necessary and that CosyVoice falls back to a simpler one called wetext, so Windows can still read numbers and symbols.</p>
+<p>In plain steps, you clone the repository with its submodules, create a Python 3.10 Conda environment, install the requirements, then download the model files from Hugging Face. The README pins PyTorch 2.3.1 built for CUDA 12.1, so an NVIDIA card is the comfortable route. <b>Expect to fix one or two install errors on Windows, and test one short sentence before you plan a big project.</b></p>
+<h2>How does CosyVoice compare with F5-TTS and Spark-TTS?</h2>
+<p>The CosyVoice team publishes a comparison table in its README. Speaker similarity there is a score for how close the cloned voice sounds to the original, measured by a separate model. These are the team's own numbers, not an independent test, so treat them as a guide.</p>
+<div class="art-table"><table><thead><tr><th>Model, team's own English test</th><th>Speaker similarity, higher is closer</th><th>Word error rate, lower is better</th><th>Model licence</th></tr></thead><tbody><tr><td>Fun-CosyVoice3-0.5B</td><td>71.8</td><td>2.24%</td><td>Apache 2.0</td></tr><tr><td>F5-TTS</td><td>64.7</td><td>2.00%</td><td>Non commercial</td></tr><tr><td>Spark TTS</td><td>57.3</td><td>1.98%</td><td>Non commercial</td></tr></tbody></table></div>
+<p>In that table CosyVoice 3 sounds most like the person it copies, while the other two make slightly fewer word mistakes. It also lets you fix a word it says wrong by writing the sounds for it, using CMU phonemes for English, which is useful in long scripts.</p>
+<h2>CosyVoice or GPT-SoVITS for your own voice?</h2>
+<p>CosyVoice is a strong pick if you work on Linux, need several languages, or want an open licence with no small print on the model. It also streams, so it can start speaking quickly while it is still working on the rest of the text.</p>
+<p>If you are on Windows and only need English in your own voice, <a href="https://github.com/RVC-Boss/GPT-SoVITS">GPT-SoVITS</a> is easier to start with. It has an MIT licence, clones from a 5 second clip, and can fine tune on about 1 minute of audio, which keeps your accent steadier over a long script. It also has a ready made Windows package, and I cover the setup in my guide to <a href="../install-gpt-sovits-windows/index.html">installing GPT-SoVITS on Windows</a>.</p>
+<h2>Where does VoiceClone fit?</h2>
+<p>I built VoiceClone for people who want their own voice on Windows without setup steps. The app works on Windows 10 and 11 with GPT-SoVITS inside, and everything happens offline, so not one recording is uploaded anywhere. You double click START VoiceClone.bat to open it, with no Python, Conda or CUDA to install.</p>
+<p>It asks for 1 to 3 minutes of your voice and checks the recording first, so it catches noisy or clipped audio early. Then you click Make it perfect and it trains the voice on your PC. It runs faster with an NVIDIA card, but a plain processor still finishes the job.</p>
+<p>Its limits, plainly: it speaks English only, it cannot sing, and it does not have CosyVoice's 9 languages. The free tier lets you clone and fully train one voice, then make 3 generations to hear it. The <a href="https://designesh.gumroad.com/l/voiceclone">$49 one time license</a> is a single payment with no subscription, and it adds retraining, a word editor, exports and unlimited length. Use it only on your own voice or a voice whose owner has clearly said yes. You can try it from the <a href="../../index.html#pricing">download page</a>.</p>
+<h2>FAQ</h2>
+<p class="art-faq-q">Is CosyVoice free for commercial use?</p>
+<p>Yes, by its licence. The code on GitHub and the model files on Hugging Face are all Apache 2.0, which allows paid work, unlike Spark-TTS and F5-TTS whose model files are non commercial.</p>
+<p class="art-faq-q">What languages does CosyVoice support?</p>
+<p>Fun-CosyVoice3 covers 9 languages: Chinese, English, Japanese, Korean, German, Spanish, French, Italian and Russian. It also handles more than 18 Chinese dialects and can clone a voice across languages.</p>
+<p class="art-faq-q">Does CosyVoice work on Windows?</p>
+<p>There are no official Windows steps, because the README is written for Linux. The requirements file swaps a few Linux only packages for plain ones on Windows, so it can be installed, but expect some fixing along the way.</p>
+<p class="art-faq-q">Does CosyVoice need a transcript of my clip?</p>
+<p>The standard cloning mode needs the clip and the exact words spoken in it. For version 3, the official example puts a short fixed prompt in front of those words, so copy the format from example.py.</p>
+<p>Sources: the FunAudioLLM CosyVoice README, LICENSE, requirements.txt and example.py on GitHub, and the Fun-CosyVoice3-0.5B-2512, CosyVoice2-0.5B and CosyVoice-300M model cards on Hugging Face, all read on 5 November 2026, the Apache 2.0 licence text on apache.org, the GPT-SoVITS README on GitHub, and the VoiceClone product page on myvoiceclones.com.</p>
+  </div>
+  <div class="cta-band">
+  <h3>Hear your own voice come back.</h3>
+  <p>The free Windows app clones and fully trains one voice, yours, on your own PC. No account, no upload, and the download starts right away.</p>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:18px;">
+    <a href="../../index.html#pricing" class="btn">Download free</a>
+    <a href="../../guide.html" class="btn ghost">Read the guide</a>
+  </div>
+</div>
+  <div class="related-wrap">
+    <div class="kicker">Keep reading</div>
+    <div class="related-grid"><a class="rel-card" href="../spark-tts-voice-cloning/index.html"><span class="cat-chip">Tech</span><b>Spark-TTS voice cloning: free to try, but the model is not for paid work</b></a><a class="rel-card" href="../f5-tts-voice-cloning/index.html"><span class="cat-chip">Tech</span><b>F5-TTS voice cloning: free to run, but the official model is not for commercial use</b></a><a class="rel-card" href="../install-gpt-sovits-windows/index.html"><span class="cat-chip">Guides</span><b>How to install GPT-SoVITS on Windows: which file to download, the steps, and where people get stuck</b></a></div>
+  </div>
+</article>
+<footer><div class="wrap" style="padding:32px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+  <p style="font-size:13.5px;color:var(--soft);">Made by Inam · <a href="https://designesh.com" target="_blank" rel="noopener" style="font-weight:600;">a Designesh tool</a></p>
+  <p class="mono" style="font-size:12px;color:var(--faint);">© 2026 · you own everything you make with it</p>
+</div></footer>
+</body>
+</html>
