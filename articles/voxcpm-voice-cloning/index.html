@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VoxCPM2 Voice Cloning: Free for Paid Work, Which Mode Wins?</title>
+<meta name="description" content="VoxCPM2 clones a voice in 30 languages and its code and model are Apache 2.0, so paid work is allowed. Which of its two cloning modes to use, and why long text breaks.">
+<link rel="canonical" href="https://myvoiceclones.com/articles/voxcpm-voice-cloning/">
+<meta property="og:title" content="VoxCPM2 Voice Cloning: Free for Paid Work, Which Mode Wins?">
+<meta property="og:description" content="VoxCPM2 clones a voice in 30 languages and its code and model are Apache 2.0, so paid work is allowed. Which of its two cloning modes to use, and why long text breaks.">
+<meta property="og:image" content="https://myvoiceclones.com/assets/articles/voxcpm-voice-cloning.png">
+<meta property="og:url" content="https://myvoiceclones.com/articles/voxcpm-voice-cloning/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../assets/favicon-512.png">
+
+<link rel="stylesheet" href="../../css/site.css">
+<script>(function(){var t=localStorage.getItem("mvc-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;})();</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "VoxCPM voice cloning: free for paid work, but pick the right mode and keep it short", "description": "VoxCPM2 clones a voice in 30 languages and its code and model are Apache 2.0, so paid work is allowed. Which of its two cloning modes to use, and why long text breaks.", "datePublished": "2026-11-07", "dateModified": "2026-11-07", "author": {"@type": "Person", "name": "Inam", "url": "https://designesh.com"}, "publisher": {"@type": "Organization", "name": "VoiceClone", "url": "https://myvoiceclones.com", "logo": {"@type": "ImageObject", "url": "https://myvoiceclones.com/assets/favicon-512.png"}, "sameAs": ["https://designesh.com", "https://designesh.gumroad.com", "https://github.com/inam8eng/voiceclone-releases"]}, "image": "https://myvoiceclones.com/assets/articles/voxcpm-voice-cloning.png", "mainEntityOfPage": "https://myvoiceclones.com/articles/voxcpm-voice-cloning/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://myvoiceclones.com/"}, {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://myvoiceclones.com/articles/"}, {"@type": "ListItem", "position": 3, "name": "VoxCPM voice cloning: free for paid work, but pick the right mode and keep it short", "item": "https://myvoiceclones.com/articles/voxcpm-voice-cloning/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is VoxCPM free for commercial use?", "acceptedAnswer": {"@type": "Answer", "text": "VoxCPM2 is free for paid work. Its code and model are Apache 2.0, and the team says it is free for commercial use, though you still need the right to use the voice you clone. The older 1.5 model card says it is for research and development."}}, {"@type": "Question", "name": "What is VoxCPM Ultimate Cloning?", "acceptedAnswer": {"@type": "Answer", "text": "It is the mode where you give VoxCPM2 a reference clip and the exact words spoken in it. The model then carries on in your voice and your rhythm, which usually sounds closer to you than cloning from the clip alone."}}, {"@type": "Question", "name": "Why does VoxCPM sound distorted on long text?", "acceptedAnswer": {"@type": "Answer", "text": "A contributor to the project confirmed that long text can distort and said it is not fully solved yet. Generate one or two sentences at a time, keep the CFG setting at its default, and join the pieces afterwards."}}, {"@type": "Question", "name": "How much VRAM does VoxCPM2 need?", "acceptedAnswer": {"@type": "Answer", "text": "The README lists about 8 GB for VoxCPM2. The older VoxCPM-0.5B is listed at about 5 GB if your card is smaller."}}]}</script>
+</head>
+<body>
+<header class="nav-outer"><nav class="nav">
+  <a href="../../index.html" class="brand" aria-label="VoiceClone home"><svg class="mark" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true"><rect class="mark-box" width="48" height="48" rx="13"/><g class="mark-wave"><rect x="7.5" y="17" width="5" height="14" rx="2.5"/><rect x="14.5" y="12" width="5" height="24" rx="2.5"/><rect x="21.5" y="9" width="5" height="30" rx="2.5"/><rect x="28.5" y="14" width="5" height="20" rx="2.5"/><rect x="35.5" y="18" width="5" height="12" rx="2.5"/></g></svg><b>VoiceClone</b></a>
+  <div class="nav-links"><a href="../../index.html#how">How it works</a><a href="../../index.html#pricing">Pricing</a><a href="../index.html">Articles</a><a href="../../index.html#faq">FAQ</a></div>
+  <a href="../../index.html#pricing" class="btn sm">Download</a>
+</nav></header>
+<article>
+  <div class="art-head">
+    <div class="crumbs"><a href="../../index.html">Home</a><span>/</span><a href="../index.html">Articles</a><span>/</span>Tech</div>
+    <h1>VoxCPM voice cloning: free for paid work, but pick the right mode and keep it short</h1>
+    <div class="art-meta"><span class="cat-chip">Tech</span><span>By Inam</span><span>·</span><span>November 7, 2026</span></div>
+  </div>
+  <figure class="art-hero"><img src="../../assets/articles/voxcpm-voice-cloning.png?v=b" width="1200" height="630" alt="VoxCPM voice cloning: free for paid work, but pick the right mode and keep it short" loading="eager" decoding="async"></figure>
+  <div class="answer-box"><div class="lbl">The short answer</div><p>VoxCPM2 is a free text to speech model from OpenBMB, released in April 2026, with about 2 billion parameters, 30 languages and 48 kHz output. Its code and model files are Apache 2.0, and the team says it is free for commercial use. It clones a voice in two ways: from a clip alone, or from a clip plus its exact transcript, which the team calls Ultimate Cloning. Keep each generation short, because the team confirms long text can distort.</p></div>
+  <div class="art-body">
+<div class="art-table"><table><thead><tr><th></th><th>VoxCPM2</th><th>GPT-SoVITS</th><th>VoiceClone</th></tr></thead><tbody><tr><td>What you give it</td><td>A reference clip, and its transcript for the best mode</td><td>A 5 second clip to try, around a minute of speech to train</td><td>1 to 3 minutes of your speech, trained on your PC</td></tr><tr><td>Licence</td><td>Apache 2.0 for the code and the model</td><td>MIT</td><td>Free tier, then a $49 one time license</td></tr><tr><td>Can you sell the work?</td><td>Yes, the team says free for commercial use</td><td>Yes, MIT allows it</td><td>Yes, with your own voice</td></tr><tr><td>Windows</td><td>Python install, no Windows steps given</td><td>Windows package you unzip</td><td>App for Windows 10 and 11</td></tr><tr><td>Languages</td><td>30, including English</td><td>English, Japanese, Korean, Cantonese, Chinese</td><td>English</td></tr></tbody></table></div>
+<p>Written by Inam, an engineer whose other work lives on <a href="https://designesh.com">designesh.com</a>. VoiceClone, in the right hand column, is an app I make and sell, so weigh my view of it with that in mind. Last updated 7 November 2026.</p>
+<p>You have probably seen VoxCPM2 named as one of the best free voice cloning models of 2026, with 30 languages and studio quality sound. Before you install it, you want two answers: can you sell what you make with it, and will it hold up on a real script, not just a demo sentence.</p>
+<p><b>Yes, you can use VoxCPM2 for paid work, because its code and model are Apache 2.0 and the team calls it free for commercial use.</b> The thing to plan around is length. The team itself confirms that long text can distort, so <b>give it one or two sentences at a time and join the pieces afterwards</b>.</p>
+<h2>What is VoxCPM2?</h2>
+<p>VoxCPM2 turns written text into spoken audio, and it can do that in a voice copied from a recording. It comes from OpenBMB, the open source group behind the MiniCPM models, and it was released in April 2026. You can read everything below in the <a href="https://github.com/OpenBMB/VoxCPM">VoxCPM README on GitHub</a>.</p>
+<p>It has about 2 billion parameters, the values the model tuned while it learned from recorded speech. A count that high tells you two things: the download is large, and your graphics card will be doing real work. On <a href="https://huggingface.co/openbmb/VoxCPM2">Hugging Face</a> the model files add up to about 5 GB. It speaks 30 languages, English among them, and it writes its audio at 48 kHz, which is the sample rate used for video sound.</p>
+<p>There are two older versions too. VoxCPM-0.5B came out in September 2025 and VoxCPM1.5 in December 2025, and both speak only Chinese and English.</p>
+<h2>Which VoxCPM cloning mode should you use?</h2>
+<p>This is the part that confuses people, because VoxCPM2 has three modes and only two of them clone.</p>
+<div class="art-table"><table><thead><tr><th>Mode</th><th>What you give it</th><th>Clones your voice?</th></tr></thead><tbody><tr><td>Voice Design</td><td>Only a written description of a voice</td><td>No, it invents one</td></tr><tr><td>Controllable Cloning</td><td>A reference clip, plus optional style notes</td><td>Yes, it copies the sound of the voice</td></tr><tr><td>Ultimate Cloning</td><td>A reference clip and its exact transcript</td><td>Yes, and it continues the way you speak</td></tr></tbody></table></div>
+<p>The difference is the transcript, which means the exact words spoken in your clip. Controllable Cloning copies what the README calls the timbre, the colour of the voice, and lets you add notes like a calm or a cheerful tone in brackets. Ultimate Cloning reads your transcript alongside the clip and carries on in your rhythm, as if you kept talking.</p>
+<p><b>Use Ultimate Cloning when you want it to sound like you, and Controllable Cloning when you want your voice but a different mood.</b> The older 0.5B and 1.5 models only have the transcript mode.</p>
+<h2>How much audio does VoxCPM need?</h2>
+<p>The team does not give a number for the reference clip, so I will not invent one. What the README does say is that VoxCPM2 takes reference audio at 16 kHz. That is phone quality, so a clean, quiet clip matters far more than a long one.</p>
+<p>My own advice from cloning is to start with one clean sentence of 5 to 10 seconds, with no music or room echo, and write its transcript out word for word. If you later want the model to hold your voice more steadily, the team says fine tuning works with as little as 5 to 10 minutes of audio.</p>
+<h2>Why does VoxCPM distort on long text?</h2>
+<p>This is the most useful thing I found in the project's bug reports. In <a href="https://github.com/OpenBMB/VoxCPM/issues/372">issue 372</a>, opened in August 2026, a user generating about 300 Chinese characters said the voice became badly distorted from about 20 seconds in. They tried the normal code and two faster engines, in both cloning modes, and got the same result.</p>
+<p>A contributor to the project replied that long text does distort, and that they are still working on it but have not fully solved it. That is an honest answer, and it tells you what to do. <b>Split your script into short pieces, generate each one on its own, and join them in your editor.</b></p>
+<p>There is a second kind of problem worth knowing. In <a href="https://github.com/OpenBMB/VoxCPM/issues/385">issue 385</a> people describe crackling and pops when cloning, and one commenter traced most of it to sudden jumps in the waveform, mostly in the quiet, breathy parts of speech. In <a href="https://github.com/OpenBMB/VoxCPM/issues/404">issue 404</a> a user reports that many voices come out over compressed and crackly, and that raising the CFG setting made it worse. CFG is how strongly the model sticks to your prompt, so leave it at the default first.</p>
+<h2>How good is VoxCPM2 in English?</h2>
+<p>Good, by the team's own tests. On the Seed-TTS English test set, VoxCPM2 scored a word error rate of 1.84 and a speaker similarity of 75.3. A word error rate of 1.84 means it said about 2 words in 100 wrong, and speaker similarity measures how close the clone sounds to the original speaker.</p>
+<p>For comparison, the older VoxCPM-0.5B scored 1.85 and 72.9 on the same test. So VoxCPM2 is about as accurate as before, but sounds more like the person it copies. These are the team's numbers, so treat them as a starting point and listen to your own results.</p>
+<h2>Is VoxCPM fast on a home PC?</h2>
+<p>On a strong card, yes. The README lists a real time factor as low as about 0.3 on an RTX 4090. Real time factor is how long it takes to make one second of audio, so 0.3 means about a third of a second of work for each second of speech, faster than you can listen to it.</p>
+<p>It needs about 8 GB of video memory, by the README's table. The team does not call that a minimum, but if your card has less, the older VoxCPM-0.5B is listed at about 5 GB. On a Mac the README lists a real time factor of about 1.76 on an M4 Pro, which means slower than real time.</p>
+<h2>Can you use VoxCPM for commercial work?</h2>
+<p>VoxCPM2 can be used for paid work. The code on GitHub uses <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>, the model card says the weights are Apache 2.0 too, and both the README and the model card say plainly that it is free for commercial use.</p>
+<p>The older models are a little different, and this is easy to miss. Their weights are also Apache 2.0, but the <a href="https://huggingface.co/openbmb/VoxCPM1.5">VoxCPM1.5 model card</a> says it is released for research and development, and that the team does not recommend production or commercial use without careful testing. If you plan to sell your work, use VoxCPM2.</p>
+<p>That puts VoxCPM2 next to <a href="../cosyvoice-voice-cloning/index.html">CosyVoice</a> and <a href="../qwen3-tts-voice-cloning/index.html">Qwen3-TTS</a> as a model you can use for paid work. Keep in mind that a software licence says nothing about whose voice you copy. The README itself forbids impersonation and fraud, so stick to your own voice, or to someone who has agreed in plain words.</p>
+<h2>How do you install VoxCPM on Windows?</h2>
+<p>There are no Windows steps in the README, so this is a normal Python install. The README asks for Python 3.10, 3.11 or 3.12, PyTorch 2.5 or newer, and CUDA 12 or newer for an NVIDIA card.</p>
+<ol><li>Make a fresh Python environment, so VoxCPM's packages do not clash with your other AI tools.</li><li>Run pip install voxcpm, which pulls in the model code and its helpers.</li><li>Download the repository from GitHub and start the web page with python app.py --port 8808, then open localhost:8808 in your browser. The model downloads on first use.</li></ol>
+<p>If you would rather not install anything, the team links a <a href="https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo">free online demo</a>. Remember that the demo runs on someone else's server, so your recording leaves your computer.</p>
+<h2>Can you fine tune VoxCPM on your own voice?</h2>
+<p>You can. Fine tuning is a second round of training on a pile of clips from a single speaker, and afterwards the model keeps that voice steadier from sentence to sentence. VoxCPM supports two kinds: LoRA, which trains a small add on and needs far less memory, and full fine tuning, which trains the whole model. The repository even includes a small web page for LoRA training.</p>
+<p>Full fine tuning is heavy. In <a href="https://github.com/OpenBMB/VoxCPM/issues/335">one report</a> a user with four 24 GB RTX 3090 cards ran out of memory doing it. On a home PC, LoRA is the realistic choice.</p>
+<h2>When should you pick something else?</h2>
+<p>VoxCPM2 makes sense when you need a language other than English, when 48 kHz sound matters for your videos, and when splitting a script into short pieces does not bother you. It also expects you to be at ease in a terminal.</p>
+<p>For English only, on Windows, in your own voice, I would point you to <a href="https://github.com/RVC-Boss/GPT-SoVITS">GPT-SoVITS</a> first. Its MIT licence allows paid work, it ships as a Windows package you unzip and run, and I wrote a step by step page on <a href="../install-gpt-sovits-windows/index.html">setting up GPT-SoVITS on Windows</a>.</p>
+<h2>Where does VoiceClone fit?</h2>
+<p>I made VoiceClone for the person who wants a cloned voice and no terminal at all. Under the hood it is GPT-SoVITS, packed as a Windows 10 and 11 app that runs fully offline, so nothing you record is ever uploaded. A double click on START VoiceClone.bat opens it, with nothing else to install first.</p>
+<p>You record or load 1 to 3 minutes of your own speech, and the app looks over that sample before it starts, so hiss, clipping or a noisy room shows up before you waste a training run. Pressing Make it perfect then trains your voice locally. A graphics card from NVIDIA speeds that up, but an ordinary processor finishes the job as well.</p>
+<p>Compared with VoxCPM2 it does less: it is English focused, it does not sing, and it has no other languages. The free tier lets you clone and fully train one voice, then make 3 generations to hear how it came out. If you keep it, the <a href="https://designesh.gumroad.com/l/voiceclone">$49 one time license</a> is paid once, with no subscription, and adds retraining, the word editor, exports and scripts of any length. Use it only on your own voice or on the voice of someone who has clearly said yes. You can get the free version from the <a href="../../index.html#pricing">download page</a>.</p>
+<h2>FAQ</h2>
+<p class="art-faq-q">Is VoxCPM free for commercial use?</p>
+<p>VoxCPM2 is free for paid work. Its code and model are Apache 2.0, and the team says it is free for commercial use, though you still need the right to use the voice you clone. The older 1.5 model card says it is for research and development.</p>
+<p class="art-faq-q">What is VoxCPM Ultimate Cloning?</p>
+<p>It is the mode where you give VoxCPM2 a reference clip and the exact words spoken in it. The model then carries on in your voice and your rhythm, which usually sounds closer to you than cloning from the clip alone.</p>
+<p class="art-faq-q">Why does VoxCPM sound distorted on long text?</p>
+<p>A contributor to the project confirmed that long text can distort and said it is not fully solved yet. Generate one or two sentences at a time, keep the CFG setting at its default, and join the pieces afterwards.</p>
+<p class="art-faq-q">How much VRAM does VoxCPM2 need?</p>
+<p>The README lists about 8 GB for VoxCPM2. The older VoxCPM-0.5B is listed at about 5 GB if your card is smaller.</p>
+<p>Sources: the OpenBMB VoxCPM README and LICENSE on GitHub, GitHub issues 335, 372, 385 and 404 on that repository, and the VoxCPM2, VoxCPM1.5 and VoxCPM-0.5B model cards and file list on Hugging Face, all read in November 2026. For the comparisons I also used the Apache 2.0 text published by the Apache Software Foundation, the GPT-SoVITS README, and the VoiceClone facts on this site.</p>
+  </div>
+  <div class="cta-band">
+  <h3>Hear your own voice come back.</h3>
+  <p>The free Windows app clones and fully trains one voice, yours, on your own PC. No account, no upload, and the download starts right away.</p>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:18px;">
+    <a href="../../index.html#pricing" class="btn">Download free</a>
+    <a href="../../guide.html" class="btn ghost">Read the guide</a>
+  </div>
+</div>
+  <div class="related-wrap">
+    <div class="kicker">Keep reading</div>
+    <div class="related-grid"><a class="rel-card" href="../qwen3-tts-voice-cloning/index.html"><span class="cat-chip">Tech</span><b>Qwen3-TTS voice cloning: a 3 second clone, free for paid work, but test the speed first</b></a><a class="rel-card" href="../cosyvoice-voice-cloning/index.html"><span class="cat-chip">Tech</span><b>CosyVoice voice cloning: free, open for paid work, but not built for Windows</b></a><a class="rel-card" href="../install-gpt-sovits-windows/index.html"><span class="cat-chip">Guides</span><b>How to install GPT-SoVITS on Windows: which file to download, the steps, and where people get stuck</b></a></div>
+  </div>
+</article>
+<footer><div class="wrap" style="padding:32px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+  <p style="font-size:13.5px;color:var(--soft);">Made by Inam · <a href="https://designesh.com" target="_blank" rel="noopener" style="font-weight:600;">a Designesh tool</a></p>
+  <p class="mono" style="font-size:12px;color:var(--faint);">© 2026 · you own everything you make with it</p>
+</div></footer>
+</body>
+</html>
