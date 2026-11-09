@@ -64,6 +64,12 @@
 - [IndexTTS2 voice cloning: free and full of emotion, but read the bilibili licence before you sell with it](https://myvoiceclones.com/articles/indextts-voice-cloning/)
 - [VibeVoice voice cloning: what Microsoft took down, and what you can still use in 2026](https://myvoiceclones.com/articles/vibevoice-voice-cloning/)
 - [Clone your voice on iPhone with Personal Voice: free and private, but it cannot make voiceovers](https://myvoiceclones.com/articles/iphone-personal-voice/)
+- [Zonos voice cloning: what it does well, and how to run it on Windows](https://myvoiceclones.com/articles/zonos-voice-cloning/)
+- [Spark-TTS voice cloning: free to try, but the model is not for paid work](https://myvoiceclones.com/articles/spark-tts-voice-cloning/)
+- [CosyVoice voice cloning: free, open for paid work, but not built for Windows](https://myvoiceclones.com/articles/cosyvoice-voice-cloning/)
+- [Qwen3-TTS voice cloning: a 3 second clone, free for paid work, but test the speed first](https://myvoiceclones.com/articles/qwen3-tts-voice-cloning/)
+- [VoxCPM voice cloning: free for paid work, but pick the right mode and keep it short](https://myvoiceclones.com/articles/voxcpm-voice-cloning/)
+- [Higgs Audio voice cloning: free for monetized videos if you credit it, but not for apps](https://myvoiceclones.com/articles/higgs-audio-voice-cloning/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
