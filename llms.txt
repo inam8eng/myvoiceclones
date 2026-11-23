@@ -75,6 +75,10 @@
 - [Best offline voice cloning software for Windows in 2026, compared honestly](https://myvoiceclones.com/articles/best-offline-voice-cloning-software-windows/)
 - [GTA 6 commentary in your own voice: a simple way to add it to clips, even without a quiet room](https://myvoiceclones.com/articles/gta-6-commentary-your-own-voice/)
 - [GTA 6 thumbnails, edits and voiceovers: how to sell them from Pakistan, with the real fees](https://myvoiceclones.com/articles/sell-gta-6-voiceovers-and-edits/)
+- [NotebookLM vs Microsoft VibeVoice: which one makes your AI podcast, and can it use your own voice?](https://myvoiceclones.com/articles/notebooklm-vs-vibevoice/)
+- [GTA 6 YouTube upload checklist: 8 things to check before you post your first video](https://myvoiceclones.com/articles/gta-6-launch-day-upload-checklist/)
+- [How to install Chatterbox TTS on Windows: the steps, the graphics card fix, and what changed after it was retired](https://myvoiceclones.com/articles/install-chatterbox-tts-windows/)
+- [KVoiceWalk: can it clone your voice for Kokoro TTS? What it does, how long it takes, and how to run it on Windows](https://myvoiceclones.com/articles/kvoicewalk-kokoro-voice-cloning/)
 
 ## Who made it
 Inam Ul Haq. Automation and data engineer, and a transmission planning engineer by trade. He builds
