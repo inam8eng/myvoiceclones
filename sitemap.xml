@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-11-23</lastmod><priority>1.0</priority></url>
-  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-11-23</lastmod><priority>0.8</priority></url>
-  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-11-23</lastmod><priority>0.7</priority></url>
-  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-11-23</lastmod><priority>0.3</priority></url>
+  <url><loc>https://myvoiceclones.com/</loc><lastmod>2026-11-24</lastmod><priority>1.0</priority></url>
+  <url><loc>https://myvoiceclones.com/guide.html</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://myvoiceclones.com/articles/</loc><lastmod>2026-11-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://myvoiceclones.com/privacy.html</loc><lastmod>2026-11-24</lastmod><priority>0.3</priority></url>
   <url><loc>https://myvoiceclones.com/articles/how-to-clone-your-own-voice/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/real-cost-of-ai-voiceovers/</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://myvoiceclones.com/articles/is-voice-cloning-safe/</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
@@ -62,4 +62,5 @@
   <url><loc>https://myvoiceclones.com/articles/gta-6-launch-day-upload-checklist/</loc><lastmod>2026-11-19</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/gta-6-launch-day-upload-checklist-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/gta-6-launch-day-upload-checklist-first-seconds.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/gta-6-launch-day-upload-checklist-voice.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/install-chatterbox-tts-windows/</loc><lastmod>2026-11-20</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/install-chatterbox-tts-windows-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/install-chatterbox-tts-windows-graphics-card.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/install-chatterbox-tts-windows-meeting-app.jpg</image:loc></image:image></url>
   <url><loc>https://myvoiceclones.com/articles/kvoicewalk-kokoro-voice-cloning/</loc><lastmod>2026-11-23</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/kvoicewalk-kokoro-voice-cloning-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/kvoicewalk-kokoro-voice-cloning-voice-sample.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/kvoicewalk-kokoro-voice-cloning-long-run.jpg</image:loc></image:image></url>
+  <url><loc>https://myvoiceclones.com/articles/install-vibevoice-windows/</loc><lastmod>2026-11-24</lastmod><priority>0.6</priority><image:image><image:loc>https://myvoiceclones.com/assets/articles/install-vibevoice-windows-hero.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/install-vibevoice-windows-graphics-card.jpg</image:loc></image:image><image:image><image:loc>https://myvoiceclones.com/assets/articles/install-vibevoice-windows-voice-sample.jpg</image:loc></image:image></url>
 </urlset>
